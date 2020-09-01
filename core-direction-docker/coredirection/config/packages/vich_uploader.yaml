@@ -1,0 +1,88 @@
+vich_uploader:
+    db_driver: orm
+
+    #mappings:
+    #    products:
+    #        uri_prefix: /images/products
+    #        upload_destination: '%kernel.project_dir%/public/images/products'
+    mappings:
+        department_image:
+            uri_prefix:         /images/department
+            upload_destination: '%kernel.root_dir%/../web/images/department'
+            namer:              vich_uploader.namer_uniqid
+        user_image:
+            uri_prefix:         /images/user
+            upload_destination: '%kernel.root_dir%/../web/images/member'
+            namer:              vich_uploader.namer_uniqid
+        action_image:
+            uri_prefix:         /images/action
+            upload_destination: '%kernel.root_dir%/../web/images/action'
+            namer:              vich_uploader.namer_uniqid
+        activity_image:
+            uri_prefix:         /images/activity
+            upload_destination: '%kernel.root_dir%/../web/images/activity'
+            namer:              vich_uploader.namer_uniqid
+        article_image:
+            uri_prefix:         /images/article
+            upload_destination: '%kernel.root_dir%/../web/images/article'
+            namer:              vich_uploader.namer_uniqid
+        amenity_image:
+            uri_prefix:         /images/amenity
+            upload_destination: '%kernel.root_dir%/../web/images/amenity'
+            namer:              vich_uploader.namer_uniqid
+        workout_image:
+            uri_prefix:         /images/workout
+            upload_destination: '%kernel.root_dir%/../web/images/workout'
+            namer:              vich_uploader.namer_uniqid
+        measurement_image:
+            uri_prefix:         /images/measurement
+            upload_destination: '%kernel.root_dir%/../web/images/measurement'
+            namer:              vich_uploader.namer_uniqid
+        exercise_image:
+            uri_prefix:         /images/exercise
+            upload_destination: '%kernel.root_dir%/../web/images/exercise'
+            namer:              vich_uploader.namer_uniqid
+        exercise_images:
+            uri_prefix:         /images/exerciseimages
+            upload_destination: '%kernel.root_dir%/../web/images/exerciseimages'
+            namer:              vich_uploader.namer_uniqid
+        workout_type:
+            uri_prefix:         /images/workouttype
+            upload_destination: '%kernel.root_dir%/../web/images/workouttype'
+            namer:              vich_uploader.namer_uniqid
+        workout_level:
+            uri_prefix:         /images/workoutlevel
+            upload_destination: '%kernel.root_dir%/../web/images/workoutlevel'
+            namer:              vich_uploader.namer_uniqid
+        facility_gallery:
+            uri_prefix:         /images/facility_gallery
+            upload_destination: '%kernel.root_dir%/../web/images/facility_gallery'
+            namer:              vich_uploader.namer_uniqid
+        article_type:
+            uri_prefix:         /images/article_type
+            upload_destination: '%kernel.root_dir%/../web/images/article_type'
+            namer:              vich_uploader.namer_uniqid
+        sections_image:
+            uri_prefix:         /images/sections_image
+            upload_destination: '%kernel.root_dir%/../web/images/sections_image'
+            namer:              vich_uploader.namer_uniqid
+        setting_logo:
+            uri_prefix:         /images/setting_logo
+            upload_destination: '%kernel.root_dir%/../web/images/setting_logo'
+            namer:              vich_uploader.namer_uniqid
+        setting_loader:
+            uri_prefix:         /images/setting_loader
+            upload_destination: '%kernel.root_dir%/../web/images/setting_loader'
+            namer:              vich_uploader.namer_uniqid
+        promotion:
+            uri_prefix:         /images/promotion
+            upload_destination: '%kernel.root_dir%/../web/images/promotion'
+            namer:              vich_uploader.namer_uniqid
+        appsetting_appicon:
+            uri_prefix:         /images/appsetting_appicon
+            upload_destination: '%kernel.root_dir%/../web/images/appsetting_appicon'
+            namer:              vich_uploader.namer_uniqid
+        gamification:
+            uri_prefix:         /images/challenge
+            upload_destination: '%kernel.root_dir%/../web/images/challenges'
+            namer:              vich_uploader.namer_uniqid

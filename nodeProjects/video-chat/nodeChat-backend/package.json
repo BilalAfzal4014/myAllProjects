@@ -1,0 +1,22 @@
+{
+  "name": "chat-for-node",
+  "version": "0.0.1",
+  "description": "video chat app, backend will be only used for exchanging of information through sockets between clients/browsers who will be using webrtc (package-name: simple-peer)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "Bilal Afzal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

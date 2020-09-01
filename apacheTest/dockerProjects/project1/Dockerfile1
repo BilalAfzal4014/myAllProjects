@@ -1,0 +1,44 @@
+FROM php:7.0-apache
+
+COPY project1/ /var/www/html/proForDocker
+#COPY project3/ /var/www/html
+#above command will copy all the content inside project3 in html folder
+#WORKDIR /var/www/html/project3 
+#CMD [ "php", "./index.php" ]
+#RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql
+
+RUN docker-php-ext-install pdo_mysql
+EXPOSE 80
+
+
+#if terminal is open in this directory then run below command 
+#sudo docker build -f Dockerfile1 -t hello-bilal ../
+#the last part "../" of above command is to make copy command to work, so we can be at the root of that directory, that directory in our case is dockerProject because if we will be in this directory then we will have project3 directory and we can copy project3 directory to our desired location
+
+
+#if terminal is open one directory above then run below command (in this case dockerProjects)
+#sudo docker build -f ./project1/Dockerfile1 -t hello-bilal .
+
+#if terminal is open two directory above then run below command (in this case dockerProjects)
+#sudo docker build -f dockerProjects/project1/Dockerfile1 -t hello-bilal ./dockerProjects
+
+#all of these commands will behave the same
+
+#objective is to stay on the dockerProjects folder
+
+#directory system is apacheTest -> dockerProjects -> project1 
+
+#general explanation is
+# #sudo docker build -f [to reach to docker file] -t hello-bilal [to react to parent directory of the directory which we want to copy]
+
+
+# to mount our local directory so we can see change
+#sudo docker run -p 83:80 -v /var/www/html/apacheTest/dockerProjects/project1/:/var/www/html/proForDocker  hello-bilal
+# sudo docker run -p 83:80 -v [absolute path to project located]:[absolute path to docker directory in which we want to mount] [image tag]
+# we don't need to write copy statement i.e second line in this case, if we are mouting our current directory by running above command
+
+
+# if we build let say atleast two images in both these images there was apache and then we run these two images then we have two containers both running on port 80 (bcz of apache) then there will be no conflicts of ports bcz both containers have their own world, but we assign our machine port to run these images, so our machine port should be unique
+
+#sudo docker run -p 82:80 -v /var/www/html/apacheTest/dockerProjects/project1:/var/www/html/proForDocker --name php-container --network php-mysql php-project
+#sudo docker run -p 81:3306 -v /Downloads/data-docker/mysql-data:/var/lib/mysql --name mysql-container --network php-mysql my-sql

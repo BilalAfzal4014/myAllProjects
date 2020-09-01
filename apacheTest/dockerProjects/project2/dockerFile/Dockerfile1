@@ -1,0 +1,3 @@
+FROM php:7.0-apache
+COPY code/ /var/www/html/proForDocker
+EXPOSE 80
