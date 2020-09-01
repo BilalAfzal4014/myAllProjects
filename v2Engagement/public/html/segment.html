@@ -1,0 +1,1026 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Cache-control" content="public">
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"  >
+    <title>Dashboard</title>
+    <link href="css/font-awesome.css" media="all" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-steps.css" rel="stylesheet" type="text/css">
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+  </head>
+  <!-- email_html-2,  -->
+  <body class="">
+
+    <div class="wrapper">
+              <!-- left_menu_expand => Add for left Bar Expand -->
+      <div class="wpr_content_holder  clearfix">
+
+        <div class="left_menu_list ">
+            <div class="menu_left_logo">
+                <a href="index.html"> <img src="images/ureka_logo2.png" alt=""> </a>
+            </div>
+            <ul>
+              <li>
+                  <a href="home.html" class="">
+                     <img src="images/hm_home_icon.png" alt="#">
+                     <b class="link_inline"> Home</b>
+                     <b class="link_block"> Home</b>
+                   </a>
+              </li>
+              <li>
+                  <a href="campaign.html">
+                    <img src="images/hm_campaign_icon.png" alt="#">
+                    <b class="link_inline"> Campaign</b>
+                    <b class="link_block"> Campaign</b>
+                  </a>
+              </li>
+              <li>
+                  <a href="segment.html" class="active">
+                    <img src="images/hm_segment_icon.png" alt="#">
+                    <b class="link_inline"> Segments</b>
+                    <b class="link_block"> Segments</b>
+                  </a>
+              </li>
+              <li>
+                <a href="newsfeed.html">
+                  <img src="images/hm_newsfeed_icon.png" alt="#">
+                  <b class="link_inline"> Newsfeed</b>
+                  <b class="link_block"> Newsfeed</b>
+                </a>
+              </li>
+              <li>
+                <a href="user_search.html">
+                  <img src="images/hm_usr_icon.png" alt="#">
+                  <b class="link_inline"> Users</b>
+                  <b class="link_block"> Users</b>
+                </a>
+              </li>
+              <li>
+                <a href="general_profile.html">
+                  <img src="images/hm_setting_icon.png" alt="#">
+                  <b class="link_inline"> Settings</b>
+                  <b class="link_block"> Settings</b>
+                </a>
+              </li>
+              <li>
+                <a href="deta_import.html">
+                  <img src="images/hm_d_imp_icon.png" alt="#" style="width:20px;">
+                  <b class="link_inline" style="font-size:10px"> Data Import</b>
+                  <b class="link_block" style="font-size:10px"> Data Import</b>
+                </a>
+              </li>
+              <!-- <li> <a href="#"> <img src="images/hm_quires_icon.png" alt="#"> <b> Quires</b> </a> </li> -->
+            </ul>
+        </div>
+
+          <div class="right_sec_outer">
+
+              <div class="rt_tp_hdr_outer clearfix">
+
+                  <div class="hdr_profile_sec">
+  
+                      <a class="hdr_menu_btn" href="#"> <img src="images/hdr_menu_btn2-new.png" alt="#"> </a>
+                      <p>
+                          <span>Beats by dr.dre</span>
+                      </p>
+  
+                  </div>
+  
+                  <div class="hdr_lft_list tp_hdr_list">
+  
+                      <ul>
+  
+                          <li><a href="#"> <img src="images/hdr_folder_icon-new.png" alt="#"> </a></li>
+                          <li><a href="#"> <img src="images/hdr_filter_icon-new.png" alt="#"> </a></li>
+                          <li><a href="#"> <img src="images/hdr_inbox_icon-new.png" alt=""> </a></li>
+                          <li class="hdr_alert"><a href="#"> <img src="images/hdr_alert_icon-new.png" alt=""> </a> <i></i>
+                          </li>
+                      </ul>
+                  </div>
+  
+                  <div class="hdr_rit_search_sec clearfix">
+  
+                      <div class="tp_hdr_search_sec">
+                          <form id="ent-serach-top" action="/search">
+                              <div class="inputWrap">
+                                  <input class="top-search" type="search" placeholder="Search Anything Here....">
+                                  <input class="search_btn" type="submit">
+                              </div>
+                          </form>
+                      </div>
+                      <a href="#"> <img src="images/hdr_profile_menu_icon-new.png" alt="#"> </a>
+                      <div class="hdr_rt_drop_down">
+                          <ul>
+                              <li><a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile </a></li>
+                              <li><a href="#"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out </a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            <!--   -->
+            <div class="rt_content_outer " id="demo">
+
+              <div class="db_content_holder step-app">
+
+                <div class="tp_BreadCrumb_list_sec clearfix">
+
+                    <label class="sec_tp_title">  Segment Details &gt; {Segment Title}</label>
+                    <div class="track_userdeta_right clearfix">
+                      <div class="Ana_track_switch">
+                        <strong>
+                          Analytic Tracking
+                          <label class="switch">
+                             <input type="checkbox">
+                             <span class="slider round"></span>
+                           </label>
+                        </strong>
+                      </div>
+
+                      <div class="uder_deta_dropdown">
+                        <div class=" inp_select">
+                              <select>
+                                 <option> User Data </option>
+                                 <option> User Data 1</option>
+                                 <option> User Data 2 </option>
+                              </select>
+                           </div>
+
+
+                      </div>
+
+                    </div>
+
+                </div>
+                <!-- Add these class for other Sections  segment_sec_1, segment_sec_2 , segment_sec_3 -->
+                <div class="segment_content_outer segment_sec_1 clearfix">
+
+                   <div class="Campaigns_input b_r">
+                      <input type="text" name="" value="" placeholder="Campaign Title ">
+                   </div>
+
+                   <div class="add_tag_sec_outer b_r clearfix">
+                     <div class=" left_tag_sec">
+                        <span>Advertising <i></i> </span>
+                        <span>Dubai <i></i> </span>
+                        <span>Conversation <i></i> </span>
+                     </div>
+                     <button type="button" name="button" class=" text_plus_icon" style="width:15px; right:0;"> <i>+</i>  </button>
+
+                   </div>
+
+                   <div class="seg_app_usag_viewed clearfix">
+                     <ul>
+                       <li>
+                         <p>Apps Used</p>
+
+                       </li>
+                       <li>
+                         <div class="camp_timing_check_box">
+                           <input type="checkbox" id="rec_comp3" name="contact" value="email" checked="">
+                           <label for="rec_comp3">Include users form all apps </label>
+                         </div>
+                       </li>
+                       <li>
+                         <div class="distribute_filter">
+                            <p><b></b> 0 Changes Since Last Viewed</p>
+                         </div>
+                       </li>
+
+                     </ul>
+                   </div>
+
+                   <div class="con_event_list_outer clearfix">
+                      <div class="conversion_event_list ">
+
+                        <div class="camp_timing_check_box">
+                          <input type="checkbox" id="sesssion_app1" name="contact" value="email" checked="">
+                          <label for="sesssion_app1"> </label>
+                         </div>
+                         <span>
+                           <img src="images/app_beat_img.png" alt="#">
+                         </span>
+                         <p>
+                           Beats by dr.dre
+                           <b>Android</b>
+                         </p>
+
+                      </div>
+                      <div class="conversion_event_list">
+
+                        <div class="camp_timing_check_box">
+                          <input type="checkbox" id="sesssion_app2" name="contact" value="email" checked="">
+                          <label for="sesssion_app2"> </label>
+                        </div>
+                         <span>
+                           <img src="images/app_beat_img.png" alt="#">
+                         </span>
+                         <p>
+                           Beats by dr.dre
+                           <b>Ios</b>
+                         </p>
+
+                      </div>
+                      <div class="conversion_event_list">
+
+                        <div class="camp_timing_check_box">
+                          <input type="checkbox" id="sesssion_app3" name="contact" value="email" checked="">
+                          <label for="sesssion_app3"> </label>
+                         </div>
+                         <span>
+                           <img src="images/app_beat_img.png" alt="#">
+                         </span>
+                         <p>
+                           Beats by dr.dre
+                           <b>Web</b>
+                         </p>
+
+
+                      </div>
+                      <div class="conversion_event_list">
+                        <div class="camp_timing_check_box">
+                          <input type="checkbox" id="sesssion_app4" name="contact" value="email" checked="">
+                          <label for="sesssion_app4"> </label>
+                         </div>
+                         <span>
+                           <img src="images/app_beat_img.png" alt="#">
+                         </span>
+                         <p>
+                           Beats by dr.dre
+                           <b>Windows Phone 8</b>
+                         </p>
+                      </div>
+
+                    </div>
+
+                   <div class="camp_title">
+                       <h3> Filters
+                         <ul class="clearfix">
+                            <li> <a href="#"> <i>+</i> Add Rule </a></li>
+                            <li> <a href="#"> <i>+</i> Add Group</a></li>
+                         </ul>
+                       </h3>
+                    </div>
+
+                   <div class="inp_and_sel_det_outer search_event_filter clearfix">
+                       <ul>
+                         <li class="search_event_filter_1st">
+                           <div class="text_del_outer clearfix">
+                             <div class=" inp_select top_left_inp  b_r">
+                                <select>
+                                   <option> Search custom attributes.. </option>
+                                   <option> Search custom attributes.. 1</option>
+                                   <option> Search custom attributes.. 2 </option>
+                                </select>
+                             </div>
+                             <span> <i></i> </span>
+                           </div>
+                         </li>
+                         <li class="search_event_filter_2nd">
+                           <div class="text_del_outer clearfix">
+                             <div class="left_inp_group b_r">
+
+                               <div class="inp_select  b_r">
+                                  <select id="gander">
+                                     <option value="app_message"> Gender </option>
+                                     <option value="email_html-2"> Male</option>
+                                     <option value="email_html-2"> Female</option>
+                                  </select>
+                               </div>
+                               <div class="inp_select  b_r">
+                                  <select id="equal">
+                                     <option value="app_message"> equal 1 </option>
+                                     <option value="email_html-2"> equal 2</option>
+                                     <option value="email_html-2"> equal 3</option>
+                                  </select>
+                               </div>
+                               <div class="inp_text b_r">
+                                  <input type="text" name="" value="" placeholder="Male" >
+                              </div>
+
+
+                             </div>
+
+
+
+                             <span> <i></i> </span>
+                           </div>
+                         </li>
+                         <li class="clearfix">
+                            <div class="togggle_btn_reach_user" style="border-right:1px solid #eaeaea;">
+                              <span class=" and_or_toggle_btn active">AND</span>
+                              <span class="and_or_toggle_btn  ">OR</span>
+                              <strong class="seg_reach_1">Total Reachable Users “ - - {- -}</strong>
+                              <strong class="seg_reach_2">Total Reachable Users {Estimated } = 5,114 <i> {0.30%}</i></strong>
+                              <strong class="seg_reach_3">Total Reachable Users Estimated = 462.9K <i> {27.54%}</i></strong>
+                            </div>
+                            <div class="reach_user_progress_bar">
+                                <label></label>
+                            </div>
+                         </li>
+                         <li>
+                           <div class=" inp_select  b_r">
+                              <select>
+                                 <option> Search Filter.. </option>
+                                 <option> Search Filter.. 1</option>
+                                 <option> Search Filter.. 2 </option>
+                              </select>
+                           </div>
+                         </li>
+                       </ul>
+                     </div>
+                  <!--
+                   <div class="camp_title">
+                         <h3> Messaging Use </h3>
+                      </div>
+
+                   <div class="seg_messages_btn_outer">
+                        <div class="seg_messages_use_sec_outer clearfix">
+                          <div class="messages_use_sec">
+                              <h3>Segments</h3>
+                              <p>This segment is not used by any Segments.</p>
+                          </div>
+                          <div class="messages_use_sec">
+                              <h3>Campaign</h3>
+                              <p>This segment is not used by any Campaign.</p>
+                          </div>
+                          <div class="messages_use_sec">
+                              <h3>News Feed Items</h3>
+                              <p>This segment is not used by any news feed items.</p>
+                          </div>
+                        </div>
+
+                   </div> -->
+
+                   <div class="camp_title">
+                          <h3> Reachable User </h3>
+                   </div>
+                   <div class="reachable_usr_app_message_otr">
+
+                       <div class="app_message">
+                         <p>Total</p>
+                         <span>1,680,650</span>
+                       </div>
+                       <div class="app_message">
+                         <p>Email</p>
+                         <span>1,355,527</span>
+                       </div>
+                       <div class="app_message">
+                         <p>Web Push</p>
+                         <span>0</span>
+                       </div>
+                       <div class="app_message">
+                         <p>iOS Push</p>
+                         <span>322,991</span>
+                       </div>
+                       <div class="app_message">
+                         <p>Android</p>
+                         <span>370,213</span>
+                       </div>
+                       <div class="app_message">
+                         <p>Window B Push</p>
+                         <span>0</span>
+                       </div>
+                   </div>
+
+                </div>
+                <!--  -->
+                <div class="step-footer save_next_sec segment_footer">
+                   <button data-direction="prev" class="step-btn" > Back</button>
+                   <button data-direction="next" class="step-btn">Next</button>
+                   <button data-direction="launch_btn" class="step-btn launch_btn">Launch Campaign </button>
+
+                   <button data-direction="" class="save_as_draft" >Save</button>
+                   <button data-direction="next" class="step-btn reset" >Reset</button>
+
+                 </div>
+
+              </div>
+
+              <div class="db_content_listing_holder">
+
+                <div class="tp_BreadCrumb_list_sec clearfix" >
+                    <label class="sec_tp_title"> Segments </label>
+                    <div class="track_userdeta_right clearfix">
+                      <div class="tp_BreadCrumb_srch_inp">
+                          <input type="search" name="" value="" placeholder="Search...">
+                      </div>
+
+                      <div class="uder_deta_dropdown">
+                        <div class=" inp_select">
+                              <select id="campaigns_type2">
+                                <option value="app_message"> Create Segment </option>
+                                <option value="email_html-2"> Create Segment-2 </option>
+                              </select>
+                           </div>
+
+
+                      </div>
+
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="listing_sec_outer clearfix">
+                  <div class="db_list_left_sec ">
+                      <div class="db_list_left_tp">
+                          <label> Group by: </label>
+                          <div class=" inp_select  b_r">
+                              <select id="create_by">
+                                 <option value="app_message"> Created By </option>
+                                 <option value="email_html-2"> Created By 2 </option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="db_list_left_btm scrollbar_content mCustomScrollbar _mCS_1">
+                        <label>Show:</label>
+                        <ul>
+                          <li> <a href="#"> All  </a> </li>
+                          <li>
+                            <div class="db_list_left_sublist">
+                              <h3>All Active</h3>
+                              <ul>
+                                <li> <a href="#">All Active 1</a> </li>
+                                <li> <a href="#">All Active 2</a> </li>
+                                <li> <a href="#">All Active 3</a> </li>
+                                <li> <a href="#">All Active 4</a> </li>
+                                <li> <a href="#">All Active 5</a> </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="db_list_left_sublist">
+                              <h3>In Active</h3>
+                              <ul>
+                                <li> <a href="#">In Active 1</a> </li>
+                                <li> <a href="#">In Active 2</a> </li>
+                                <li> <a href="#">In Active 3</a> </li>
+                                <li> <a href="#">In Active 4</a> </li>
+                                <li> <a href="#">In Active 5</a> </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="db_list_left_sublist">
+                              <h3>Region</h3>
+                              <ul>
+                                <li> <a href="#">Region 1</a> </li>
+                                <li> <a href="#">Region 2</a> </li>
+                                <li> <a href="#">Region 3</a> </li>
+                                <li> <a href="#">Region 4</a> </li>
+                                <li> <a href="#">Region 5</a> </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="db_list_left_sublist">
+                              <a href="#">Last-Feed</a>
+                              <h3>Type</h3>
+                              <ul>
+                                <li> <a href="#">Type-1</a> </li>
+                                <li> <a href="#">Type-2</a> </li>
+                                <li> <a href="#">Type-3</a> </li>
+                                <li> <a href="#">Type-4</a> </li>
+                                <li> <a href="#">Type-5</a> </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+
+                        <label>Tags:</label>
+                        <ul class="tags">
+                          <li> <a href="#"> 2018 Creative AB… </a> </li>
+                          <li> <a href="#"> 2018 Language AB… </a> </li>
+                          <li> <a href="#"> 2018 CTA AB Test… </a> </li>
+                          <li> <a href="#"> 2018 CTA AB Test… </a> </li>
+                          <li> <a href="#"> 2018 Language AB…  </a> </li>
+                          <li> <a href="#"> 2018 OR AB Test… </a> </li>
+                          <li> <a href="#"> 2017 Creative AB… </a> </li>
+                          <li> <a href="#"> 2018 Language AB… </a> </li>
+                          <li> <a href="#"> 2018 OR AB Test… </a> </li>
+                        </ul>
+                      </div>
+
+                  </div>
+                  <div class="db_list_right_sec">
+                    <div class="list_table_header">
+                      <table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th style="width:40%;">Segment Name</th>
+                          <th style="width:10%;">Filters</th>
+                          <th style="width:10%;">Campaigns</th>
+                          <th style="width:10%;">Cards</th>
+                          <th style="width:12%;">Last Edited</th>
+                          <th style="width:12%;">Created By</th>
+                          <th style="width:6%;"></th>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_table_body scrollbar_content mCustomScrollbar _mCS_1">
+                      <table cellspacing="0" cellpadding="0" padding-right:10px;>
+
+                        <tr>
+                          <td style="width:40%;"> <a href="#"> Merchant Redemption Numbers </a></td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:12%;"> 1 day ago </td>
+                          <td style="width:12%;"> Jawad Ashraf</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"> <a href="#"> Internal Test Group </a></td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 5</td>
+                          <td style="width:12%;"> 1 day ago </td>
+                          <td style="width:12%;"> Edward Tucker</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> egypt </a></td>
+                          <td style="width:10%;"> 1</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:12%;"> 1 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> damla test </a></td>
+                          <td style="width:10%;"> 1</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:12%;"> 6 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> OMN Launch 2018 Prospects EN</a></td>
+                          <td style="width:10%;"> 3</td>
+                          <td style="width:10%;"> 13</td>
+                          <td style="width:10%;"> 14</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> DXB Launch 2018 Prospects AR </a></td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:10%;"> 20</td>
+                          <td style="width:10%;"> 14</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> UAE + FD + DXB&FD + AUH&DXB (master) Launch 2018 Re... </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 5</td>
+                          <td style="width:10%;"> 3</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> DXB Launch 2018 Prospects EN </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 20</td>
+                          <td style="width:10%;"> 14</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Members Sales Pre-Sales 2018 Launch </a></td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:12%;"> 11 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Sales 2018 Launch </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 8</td>
+                          <td style="width:12%;"> 11 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Email Sales Launch </a></td>
+                          <td style="width:10%;"> 3</td>
+                          <td style="width:10%;"> 110</td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:12%;"> 13 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> DXB Launch EN </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 20</td>
+                          <td style="width:10%;"> 138</td>
+                          <td style="width:12%;"> 13 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> UAE + FD + DXB&FD + AUH&DXB (master) Launch 2018 Re... </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 5</td>
+                          <td style="width:10%;"> 3</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> DXB Launch 2018 Prospects EN </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 20</td>
+                          <td style="width:10%;"> 14</td>
+                          <td style="width:12%;"> 07 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Members Sales Pre-Sales 2018 Launch </a></td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 4</td>
+                          <td style="width:12%;"> 11 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Sales 2018 Launch </a></td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:10%;"> 0</td>
+                          <td style="width:10%;"> 8</td>
+                          <td style="width:12%;"> 11 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:40%;"><a href="#"> Email Sales Launch </a></td>
+                          <td style="width:10%;"> 3</td>
+                          <td style="width:10%;"> 110</td>
+                          <td style="width:10%;"> 7</td>
+                          <td style="width:12%;"> 13 day ago</td>
+                          <td style="width:12%;"> Ash</td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+
+
+
+                      </table>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <div class=" step-content">
+
+                  <div class="step-footer save_next_sec ">
+
+                     <div class="listing_sec_ftr_detail">
+                       <p>Showing rows 1 to 12 of 2,005 </p>
+                     </div>
+
+
+                   </div>
+
+                </div>
+
+                <!--  -->
+              </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- <div class="footer_outer">
+        <p> &#169; Engagement Platform 2018 </p>
+      </div> -->
+
+   </div>
+
+   <script src="js/my_script.js"></script>
+   <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="js/jquery-resizable.js"></script>
+   <script type="text/javascript" src="js/jquery-steps.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+   <script type="text/javascript">
+
+   $(document).ready(function(){
+ // Class Add/ Remove On Wrapper
+     $(".hdr_menu_btn").click(function(){
+         $(".wpr_content_holder ").toggleClass("left_menu_expand");
+     });
+ // Left Header button active on click Function
+     $(".left_menu_list ul li a").click(function(){
+       $(".left_menu_list ul li a").removeClass("active");
+       $(this).addClass("active");
+     });
+
+//  campaigns_type Section add/Remove class on parent
+      $("#campaigns_type").change(function(){
+
+      var lang_var = $("#campaigns_type option:selected").val();
+
+      $("body").attr("class",lang_var);
+
+      });
+
+  // Compose In-App Messages Tab Function
+       $(".pre_comp_title_icons ul li a").click(function(e){
+   		  $(".pre_comp_title_icons ul li a").removeClass("active");
+   		  $(this).addClass("active");
+
+   		  var this_id = $(this).attr("href");
+   		   $(".comp_det_sec").hide();
+   		  $(this_id).show( );
+   		  return false;
+
+   		});
+ // Top Header-right Drop Down Function
+       $(".hdr_rit_search_sec a").click(function(){
+         $(".hdr_rt_drop_down").slideToggle();
+
+       });
+       $(".hdr_rt_drop_down ul li a").click(function(){
+         $(this).parents(".hdr_rt_drop_down") .slideUp();
+
+       });
+
+ // Step function
+       $('#demo').steps({
+          startAt: 0,
+          showBackButton: true,
+          showFooterButtons: true,
+        });
+//////////////////
+
+        $(".con_event_dropdown span ").click(function(e){
+          $(".con_event_dropdown ul").slideToggle();
+
+        });
+
+        $(".con_event_dropdown a").click(function(e){
+          $(".con_event_dropdown ul ").slideUp();
+
+        });
+
+//    Step-5 Tab with Dropdown
+        $(".con_event_dropdown li a").click(function() {
+
+          var test = $(this).text();
+          $('.con_event_dropdown span').text('');
+          $('.con_event_dropdown span').text(test);
+
+          var this_id = $(this).attr("tab");
+          $('.conversion_event_step').removeClass('active');
+          $('#' + this_id).addClass('active');
+         });
+
+
+        $(".rt_aligning_btn ul li a").click(function(e){
+          $(".rt_aligning_btn ul li a").removeClass("active");
+          $(this).addClass("active");
+        });
+
+
+// And Or Toggle Btns Effects
+
+    $(".and_or_toggle_btn ").click(function() {
+      $(this).toggleClass('active');
+
+
+    });
+
+
+ //  Tab Step-3
+ // tab Function
+      $(".select_button a").click(function(e){
+      	$(".select_button a").removeClass("active");
+      	$(this).addClass("active");
+
+      	var this_id = $(this).attr("href");
+      	$(".sel_btn_det").fadeOut('fast');
+      	$(this_id).fadeIn('slow');
+      	return false;
+      });
+
+// Sec-2 - Email
+
+//  step-1 temp_Add Remove class
+
+$(".tamp_list_outer ul li a").click(function(e){
+  $(".tamp_list_outer ul li a").removeClass("active");
+  $(this).addClass("active");
+});
+
+//
+//  Compose In-App Messages Tab Function
+     $(".pre_comp_title_icons2 ul li a").click(function(e){
+      $(".pre_comp_title_icons2 ul li a").removeClass("active");
+      $(this).addClass("active");
+
+      var this_id = $(this).attr("href");
+       $(".comp_det_sec").fadeOut('fast');
+      $(this_id).fadeIn('slow');
+      return false;
+
+    });
+
+
+    $(".lst_tbl_drop_outer span").click(function(e){
+     $(this).parent(".lst_tbl_drop_outer").find("ul").slideToggle('slow');
+     return false;
+
+     });
+    $(".lst_tbl_drop_outer ul li").click(function(e){
+    $(this).parent(".lst_tbl_drop_outer ul").slideUp('slow');
+    return false;
+
+  });
+
+// Splitter function
+      $(".panel-left").resizable({
+      handleSelector: ".splitter",
+      resizeHeight: false,
+      resizeWidth: true
+      });
+
+//   Listing-left-bottom- Sub-Menu
+
+      $(".db_list_left_sublist h3").click(function(){
+        $(this).toggleClass('list_left_sublist_active');
+        $(this).parent().find('ul').slideToggle(500);
+      });
+
+      //   listing to Segments show ///////////
+        $("#campaigns_type2").change(function(){
+
+        var lang_var = $("#campaigns_type2 option:selected").val();
+
+        $("body").attr("class",lang_var);
+        $(".db_content_holder").show();
+        $(".db_content_listing_holder").hide();
+        });
+      ////////////////////////
+   });
+
+    </script>
+
+  </body>
+</html>

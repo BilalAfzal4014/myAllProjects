@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        .body {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button onclick="playVid()" type="button">Play Video</button>
+    <button onclick="pauseVid()" type="button">Pause Video</button><br>
+    <video id="videoPlayer" controls>
+        <source src="http://localhost:4001/play-video/sample.mp4" type="video/mp4">
+    </video>
+    <div>
+        <button onclick="changeMovie('The.Siege.Of.Jadotville.2016.720p.WEBRip.x264-[YTS.LT].mp4')">Play movie</button>
+        <button onclick="changeMovie('sample.mp4')">Play sample</button>
+    </div>
+</div>
+
+<script>
+    function changeMovie(fileName) {
+        document.getElementById("videoPlayer").src = "http://localhost:4001/play-video/" + fileName;
+    }
+
+    function playVid() {
+        document.getElementById("videoPlayer").play();
+    }
+
+    function pauseVid() {
+        document.getElementById("videoPlayer").pause();
+    }
+
+</script>
+</body>
+</html>

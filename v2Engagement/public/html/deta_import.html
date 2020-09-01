@@ -1,0 +1,1052 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Cache-control" content="public">
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"  >
+    <title>Dashboard</title>
+    <link href="css/font-awesome.css" media="all" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-steps.css" rel="stylesheet" type="text/css">
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  </head>
+  <!-- email_html-2,  -->
+  <body class="">
+
+    <div class="wrapper">
+              <!-- left_menu_expand => Add for left Bar Expand -->
+      <div class="wpr_content_holder  clearfix">
+
+        <div class="left_menu_list ">
+            <div class="menu_left_logo">
+                <a href="index.html"> <img src="images/ureka_logo2.png" alt=""> </a>
+            </div>
+            <ul>
+              <li>
+                  <a href="home.html" class="">
+                     <img src="images/hm_home_icon.png" alt="#">
+                     <b class="link_inline"> Home</b>
+                     <b class="link_block"> Home</b>
+                   </a>
+              </li>
+              <li>
+                  <a href="campaign.html">
+                    <img src="images/hm_campaign_icon.png" alt="#">
+                    <b class="link_inline"> Campaign</b>
+                    <b class="link_block"> Campaign</b>
+                  </a>
+              </li>
+              <li>
+                  <a href="segment.html">
+                    <img src="images/hm_segment_icon.png" alt="#">
+                    <b class="link_inline"> Segments</b>
+                    <b class="link_block"> Segments</b>
+                  </a>
+              </li>
+              <li>
+                <a href="newsfeed.html">
+                  <img src="images/hm_newsfeed_icon.png" alt="#">
+                  <b class="link_inline"> Newsfeed</b>
+                  <b class="link_block"> Newsfeed</b>
+                </a>
+              </li>
+              <li>
+                <a href="user_search.html">
+                  <img src="images/hm_usr_icon.png" alt="#">
+                  <b class="link_inline"> Users</b>
+                  <b class="link_block"> Users</b>
+                </a>
+              </li>
+              <li>
+                <a href="general_profile.html">
+                  <img src="images/hm_setting_icon.png" alt="#">
+                  <b class="link_inline"> Settings</b>
+                  <b class="link_block"> Settings</b>
+                </a>
+              </li>
+              <li>
+                <a href="deta_import.html" class="active">
+                  <img src="images/hm_d_imp_icon.png" alt="#" style="width:20px;">
+                  <b class="link_inline" style="font-size:10px"> Data Import</b>
+                  <b class="link_block" style="font-size:10px"> Data Import</b>
+                </a>
+              </li>
+              <!-- <li> <a href="#"> <img src="images/hm_quires_icon.png" alt="#"> <b> Quires</b> </a> </li> -->
+            </ul>
+        </div>
+
+          <div class="right_sec_outer ">
+
+              <div class="rt_tp_hdr_outer clearfix">
+
+                  <div class="hdr_profile_sec">
+  
+                      <a class="hdr_menu_btn" href="#"> <img src="images/hdr_menu_btn2-new.png" alt="#"> </a>
+                      <p>
+                          <span>Beats by dr.dre</span>
+                      </p>
+  
+                  </div>
+  
+                  <div class="hdr_lft_list tp_hdr_list">
+  
+                      <ul>
+  
+                          <li><a href="#"> <img src="images/hdr_folder_icon-new.png" alt="#"> </a></li>
+                          <li><a href="#"> <img src="images/hdr_filter_icon-new.png" alt="#"> </a></li>
+                          <li><a href="#"> <img src="images/hdr_inbox_icon-new.png" alt=""> </a></li>
+                          <li class="hdr_alert"><a href="#"> <img src="images/hdr_alert_icon-new.png" alt=""> </a> <i></i>
+                          </li>
+                      </ul>
+                  </div>
+  
+                  <div class="hdr_rit_search_sec clearfix">
+  
+                      <div class="tp_hdr_search_sec">
+                          <form id="ent-serach-top" action="/search">
+                              <div class="inputWrap">
+                                  <input class="top-search" type="search" placeholder="Search Anything Here....">
+                                  <input class="search_btn" type="submit">
+                              </div>
+                          </form>
+                      </div>
+                      <a href="#"> <img src="images/hdr_profile_menu_icon-new.png" alt="#"> </a>
+                      <div class="hdr_rt_drop_down">
+                          <ul>
+                              <li><a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile </a></li>
+                              <li><a href="#"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out </a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            <!--   -->
+            <div class="rt_content_outer" id="demo">
+              <!-- 1 -->
+              <div class="db_content_holder deta_imp_sec step-app">
+
+                <div class="tp_BreadCrumb_list_sec  clearfix" >
+                    <label class="sec_tp_title"> Deta Import </label>
+                    <div class="track_userdeta_right clearfix">
+                      <div class="tp_BreadCrumb_srch_inp">
+                          <input type="search" name="" value="" placeholder="Search...">
+                      </div>
+
+                      <div class="uder_deta_dropdown">
+                        <div class=" inp_select">
+                            <select id="">
+                              <option value="app_message"> Action </option>
+                              <option value="email_html-2"> Upload</option>
+
+                            </select>
+                         </div>
+
+
+                      </div>
+
+                    </div>
+
+                </div>
+                <!-- Add these class for other Sections  segment_sec_1, segment_sec_2 , segment_sec_3 -->
+                <div class="segment_content_outer deta_imp_cont_sec clearfix">
+
+                   <div class="deta_imp_upload_sec">
+                      <label class="deta_imps_upload_btn">
+                        <input type="file" name="" value="">
+                      </label>
+                    </div>
+                   <div class="deta_imp_list_sec ">
+
+                      <div class="db_list_right_sec deta_imp_list_sec" >
+                        <div class="list_table_header">
+                          <table cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                              <th style="width:54%;">Name</th>
+                              <th style="width:14%;">Created On</th>
+                              <th style="width:14%;">Last Edited</th>
+                              <th style="width:14%;">Created By</th>
+                              <th style="width:6%;"></th>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                        <div class="list_table_body scrollbar_content2 mCustomScrollbar _mCS_1 _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                          <table cellspacing="0" cellpadding="0" >
+
+                            <tbody>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/07/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;"> Jawad Ashraf
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 06/06/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;">  Edward Tucker
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 05/05/2018
+                                </th><th style="width:14%;"> 2 day ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/07/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;"> Jawad Ashraf
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 06/06/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;">  Edward Tucker
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 05/05/2018
+                                </th><th style="width:14%;"> 2 day ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/07/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;"> Jawad Ashraf
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 06/06/2018
+                                </th><th style="width:14%;"> 1 day ago
+                                </th><th style="width:14%;">  Edward Tucker
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 05/05/2018
+                                </th><th style="width:14%;"> 2 day ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:54%;">
+                                  <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                                  </a>
+                                </td>
+                                <th style="width:14%;"> 04/05/2018
+                                </th><th style="width:14%;"> 06 days ago
+                                </th><th style="width:14%;"> Ash
+                                </th><td style="width:6%;">
+                                  <div class="lst_tbl_drop_outer">
+                                      <span class=""> <img src="images/sett_icon.png" alt="#" class="mCS_img_loaded"> </span>
+                                      <ul>
+                                        <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                        <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                      </ul>
+                                  </div>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 130px; display: block; height: 50px; max-height: 182px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 130px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="step-footer save_next_sec segment_footer">
+                   <button data-direction="prev" class="step-btn" > Back</button>
+                   <button data-direction="next" class="step-btn">Next</button>
+                   <button data-direction="launch_btn" class="step-btn launch_btn">Launch Campaign </button>
+
+                   <button data-direction="" class="save_as_draft" >Save</button>
+                   <!-- <button data-direction="next" class="step-btn reset" >Reset</button> -->
+
+                 </div>
+
+              </div>
+              <!-- 2 -->
+              <div class="db_content_listing_holder" >
+
+                <div class="tp_BreadCrumb_list_sec clearfix" >
+                    <label class="sec_tp_title"> Data Import </label>
+                    <div class="track_userdeta_right clearfix">
+                      <div class="tp_BreadCrumb_srch_inp">
+                          <input type="search" name="" value="" placeholder="Search...">
+                      </div>
+
+                      <div class="uder_deta_dropdown">
+                        <div class=" inp_select">
+                            <select id="campaigns_type2">
+                              <option value="app_message"> Actions  </option>
+                              <option value="email_html-2"> Upload </option>
+                            </select>
+                         </div>
+
+
+                      </div>
+
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="listing_sec_outer clearfix">
+                  <div class="db_list_left_sec ">
+                      <div class="db_list_left_tp">
+                          <label> Group by: </label>
+                          <div class=" inp_select  b_r">
+                              <select id="create_by">
+                                 <option value="app_message"> Created By </option>
+                                 <option value="email_html-2"> Created By 2 </option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="db_list_left_btm scrollbar_content mCustomScrollbar _mCS_1">
+
+                        <label>Tags:</label>
+                        <ul class="tags">
+                          <li> <a href="#"> 2018 Creative AB… </a> </li>
+                          <li> <a href="#"> 2018 Language AB… </a> </li>
+                          <li> <a href="#"> 2018 CTA AB Test… </a> </li>
+                          <li> <a href="#"> 2018 CTA AB Test… </a> </li>
+                          <li> <a href="#"> 2018 Language AB…  </a> </li>
+                          <li> <a href="#"> 2018 OR AB Test… </a> </li>
+                          <li> <a href="#"> 2017 Creative AB… </a> </li>
+                          <li> <a href="#"> 2018 Language AB… </a> </li>
+                          <li> <a href="#"> 2018 OR AB Test… </a> </li>
+                        </ul>
+                      </div>
+
+                  </div>
+
+                  <div class="db_list_right_sec">
+                    <div class="list_table_header">
+                      <table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th style="width:54%;">Name</th>
+                          <th style="width:14%;">Created On</th>
+                          <th style="width:14%;">Last Edited</th>
+                          <th style="width:14%;">Created By</th>
+                          <th style="width:6%;"></th>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_table_body scrollbar_content mCustomScrollbar _mCS_1">
+                      <table cellspacing="0" cellpadding="0" padding-right:10px;>
+
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/07/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;"> Jawad Ashraf </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 06/06/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;">  Edward Tucker </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 05/05/2018 </td>
+                          <th style="width:14%;"> 2 day ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/07/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;"> Jawad Ashraf </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 06/06/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;">  Edward Tucker </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 05/05/2018 </td>
+                          <th style="width:14%;"> 2 day ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/07/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;"> Jawad Ashraf </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 06/06/2018 </td>
+                          <th style="width:14%;"> 1 day ago </td>
+                          <th style="width:14%;">  Edward Tucker </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 05/05/2018 </td>
+                          <th style="width:14%;"> 2 day ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width:54%;">
+                            <a href="#">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget...
+                            </a>
+                          </td>
+                          <th style="width:14%;"> 04/05/2018 </td>
+                          <th style="width:14%;"> 06 days ago </td>
+                          <th style="width:14%;"> Ash </td>
+                          <td style="width:6%;">
+                            <div class="lst_tbl_drop_outer">
+                                <span class=""> <img src="images/sett_icon.png" alt="#"> </span>
+                                <ul>
+                                  <li> <a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit </a>  </li>
+                                  <li> <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> View </a>  </li>
+                                </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+
+                      </table>
+                    </div>
+
+
+                  </div>
+
+                  <!--  -->
+                </div>
+
+                <div class=" step-content">
+
+                  <div class="step-footer save_next_sec ">
+
+                     <div class="listing_sec_ftr_detail">
+                       <p> Showing rows 1 to 12 of 2,005 </p>
+                     </div>
+
+                   </div>
+
+                </div>
+
+                <!--  -->
+              </div>
+              <!-- close -->
+
+            </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- <div class="footer_outer">
+        <p> &#169; Engagement Platform 2018 </p>
+      </div> -->
+
+   </div>
+
+   <script src="js/my_script.js"></script>
+   <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="js/jquery-resizable.js"></script>
+   <script type="text/javascript" src="js/jquery-steps.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+   <script type="text/javascript">
+
+   $(document).ready(function(){
+ // Class Add/ Remove On Wrapper
+     $(".hdr_menu_btn").click(function(){
+         $(".wpr_content_holder ").toggleClass("left_menu_expand");
+     });
+ // Left Header button active on click Function
+     $(".left_menu_list ul li a").click(function(){
+       $(".left_menu_list ul li a").removeClass("active");
+       $(this).addClass("active");
+     });
+
+//  campaigns_type Section add/Remove class on parent
+      $("#campaigns_type").change(function(){
+
+      var lang_var = $("#campaigns_type option:selected").val();
+
+      $("body").attr("class",lang_var);
+
+      });
+
+  // Compose In-App Messages Tab Function
+       $(".pre_comp_title_icons ul li a").click(function(e){
+   		  $(".pre_comp_title_icons ul li a").removeClass("active");
+   		  $(this).addClass("active");
+
+   		  var this_id = $(this).attr("href");
+   		   $(".comp_det_sec").hide();
+   		  $(this_id).show( );
+   		  return false;
+
+   		});
+ // Top Header-right Drop Down Function
+       $(".hdr_rit_search_sec a").click(function(){
+         $(".hdr_rt_drop_down").slideToggle();
+
+       });
+       $(".hdr_rt_drop_down ul li a").click(function(){
+         $(this).parents(".hdr_rt_drop_down") .slideUp();
+
+       });
+
+ // Step function
+       $('#demo').steps({
+          startAt: 0,
+          showBackButton: true,
+          showFooterButtons: true,
+        });
+//////////////////
+
+        $(".con_event_dropdown span ").click(function(e){
+          $(".con_event_dropdown ul").slideToggle();
+
+        });
+
+        $(".con_event_dropdown a").click(function(e){
+          $(".con_event_dropdown ul ").slideUp();
+
+        });
+
+//    Step-5 Tab with Dropdown
+        $(".con_event_dropdown li a").click(function() {
+
+          var test = $(this).text();
+          $('.con_event_dropdown span').text('');
+          $('.con_event_dropdown span').text(test);
+
+          var this_id = $(this).attr("tab");
+          $('.conversion_event_step').removeClass('active');
+          $('#' + this_id).addClass('active');
+         });
+
+
+        $(".rt_aligning_btn ul li a").click(function(e){
+          $(".rt_aligning_btn ul li a").removeClass("active");
+          $(this).addClass("active");
+        });
+
+
+// And Or Toggle Btns Effects
+
+    $(".and_or_toggle_btn ").click(function() {
+      $(this).toggleClass('active');
+
+
+    });
+
+
+ //  Tab Step-3
+ // tab Function
+      $(".select_button a").click(function(e){
+      	$(".select_button a").removeClass("active");
+      	$(this).addClass("active");
+
+      	var this_id = $(this).attr("href");
+      	$(".sel_btn_det").fadeOut('fast');
+      	$(this_id).fadeIn('slow');
+      	return false;
+      });
+
+// Sec-2 - Email
+
+//  step-1 temp_Add Remove class
+
+$(".tamp_list_outer ul li a").click(function(e){
+  $(".tamp_list_outer ul li a").removeClass("active");
+  $(this).addClass("active");
+});
+
+//
+//  Compose In-App Messages Tab Function
+     $(".pre_comp_title_icons2 ul li a").click(function(e){
+      $(".pre_comp_title_icons2 ul li a").removeClass("active");
+      $(this).addClass("active");
+
+      var this_id = $(this).attr("href");
+       $(".comp_det_sec").fadeOut('fast');
+      $(this_id).fadeIn('slow');
+      return false;
+
+    });
+
+
+    $(".lst_tbl_drop_outer span").click(function(e){
+     $(this).parent(".lst_tbl_drop_outer").find("ul").slideToggle('slow');
+     return false;
+
+     });
+    $(".lst_tbl_drop_outer ul li").click(function(e){
+    $(this).parent(".lst_tbl_drop_outer ul").slideUp('slow');
+    return false;
+
+  });
+
+// Splitter function
+      $(".panel-left").resizable({
+      handleSelector: ".splitter",
+      resizeHeight: false,
+      resizeWidth: true
+      });
+
+//   Listing-left-bottom- Sub-Menu
+
+// $(".uder_deta_dropdown").click(function(){
+//   $('.mCSB_dragger_bar').hide();
+//   $('.scrollbar_content2 #mCSB_draggerContainer .mCSB_dragger_bar').show();
+//
+// });
+      $(".db_list_left_sublist h3").click(function(){
+        $(this).toggleClass('list_left_sublist_active');
+        $(this).parent().find('ul').slideToggle(500);
+      });
+
+      //   listing to Segments show ///////////
+        $("#campaigns_type2").change(function(){
+
+        var lang_var = $("#campaigns_type2 option:selected").val();
+
+        $("body").attr("class",lang_var);
+        $(".db_content_holder").show();
+        $(".db_content_listing_holder").hide();
+        });
+      ////////////////////////
+   });
+
+    </script>
+  </body>
+</html>

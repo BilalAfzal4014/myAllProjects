@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+}
+
+.table_div_holder {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.center_allign_content_vertical {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.input_div_holder {
+    margin: 4px 0px;
+}
+
+.text_input {
+    width: 40%;
+    padding: 4px 2px;
+    border-radius: 5px;
+}
+
+.submit_input {
+    padding: 8px;
+    background: #1371c7;
+    color: white;
+    border: #1371c7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user_info_holder {
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+}
+
+.user_infos {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.user_infos p {
+    margin: 0px;
+}
+
+.left_right_btn_holder {
+    width: 25%;
+    display: inline-block;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.list_none {
+    list-style: none;
+    padding: 5px;
+}
+
+.list_none li {
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.list_none li:hover {
+    background: #f3f7f796;
+}
+
+
+/*side menu starts*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*side menu ends*/
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.background_red {
+    background: red;
+    color: white !important;
+}
+
+.submitbtn {
+    border: 1px solid red;
+    padding: 7px;
+    color: white;
+    position: relative;
+    top: -46px;
+    left: 15px;
+    border-radius: 5px;
+}

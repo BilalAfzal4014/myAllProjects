@@ -1,0 +1,38 @@
+Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services: 
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQs0E3F3EOVQKzsv1o8lY2aMShfKNaTUk",
+    authDomain: "sahermesv3.firebaseapp.com",
+    databaseURL: "https://sahermesv3.firebaseio.com",
+    projectId: "sahermesv3",
+    storageBucket: "",
+    messagingSenderId: "363187462121",
+    appId: "1:363187462121:web:7ff396ab2db8f5cd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+===========
+Server Key
+AAAAVI-o3-k:APA91bHD5uO9sD9gDClNPQC5oG914jiDcOTheTCuqXNS3bcghtUeOfhDS7hxe4i5ytFTqN0N0E5ujJdUQ-fpzyR2hfVcLn7nVjNkJiWOav3fgHcxKPqOvEjj9hVu-ZIWbKK1kK_ttGKu
+
+
+==============
+
+Web API Key
+AIzaSyDQs0E3F3EOVQKzsv1o8lY2aMShfKNaTUk
+
+App ID
+1:363187462121:web:7ff396ab2db8f5cd

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hermes V3</title>
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/custom_scroll.css">
+    <link rel="shortcut icon" type="image/png" href="./src/assets/images/favicon.png">
+    <!--<link rel="stylesheet" type="text/css" href="./src/assets/css/datepicker.css">-->
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/font-awesome-4.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/font-awesome-5.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/all.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i">
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but Hermes V3 doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div id="app"></div>
+<script src="./src/assets/js/jquery.js"></script>
+<script src="./src/assets/js/custom_scroll.min.js"></script>
+<script src="./src/assets/js/canvasjs.min.js"></script>
+<script src="./src/assets/js/bootstrap.min.js"></script>
+<script src="./src/assets/js/custom.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD58lmO1AbCaJURnfc-IGEZHtdzBKW_1-E&region=GB&v=3&amp;libraries=drawing,places"></script>
+<script src="./src/assets/plugins/bootstrap-selectpicker/js/selectpicker.js"></script>
+<!--<script src="./src/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>-->
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<!--<script src="./dist/build.js"></script>-->
+
+<script>
+
+    let filePath = "/dist/build.js" + "?" + new Date();
+    let plugin = document.createElement("script");
+    plugin.setAttribute(
+        "src",
+        filePath
+    );
+    plugin.async = true;
+    document.head.appendChild(plugin);
+
+</script>
+
+
+</body>
+</html>

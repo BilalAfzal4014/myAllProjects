@@ -1,0 +1,25 @@
+{
+  "name": "expresspackage",
+  "version": "1.0.0",
+  "description": "Express app for learning new things by trying",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bull": "^3.10.0",
+    "events": "^3.0.0",
+    "express": "^4.17.1",
+    "form-data": "^2.5.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.3.0",
+    "redis": "^2.8.0",
+    "util": "^0.12.1"
+  }
+}

@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Cache-control" content="public">
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dashboard</title>
+    <link href="css/font-awesome.css" media="all" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-steps.css" rel="stylesheet" type="text/css">
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="{{asset('html/css/jquery.mCustomScrollbar.css')}}">
+    <script>
+        window.onload = function () {
+        
+        //Better to construct options first and then pass it as a parameter
+        var options = {
+            exportEnabled: true,
+            animationEnabled: true,
+            title: {
+                text: ""
+            },
+            axisX:{
+                tickColor: "transparent",
+                gridColor: "transparent",
+                labelFontColor: "transparent",
+                lineColor: "transparent"
+            },
+            axisY:{
+                tickColor: "transparent",
+                gridColor: "transparent",
+                labelFontColor: "transparent",
+                lineColor: "transparent"
+            },
+            data: [
+                {
+                    color: "#eef6f6",
+                    lineColor: "#2a8689",
+                    markerColor: "transparent",
+                    // lineThickness: 5,
+                    type: "splineArea", //change it to line, area, bar, pie, etc
+                    dataPoints: [
+                        { y: 10 },
+                        { y: 6 },
+                        { y: 14 },
+                        { y: 12 },
+                        { y: 19 },
+                        { y: 14 },
+                        { y: 26 },
+                        { y: 10 },
+                        { y: 22 }
+                    ]
+                }
+            ]
+        };
+        $("#chart1").CanvasJSChart(options);
+        $("#chart2").CanvasJSChart(options);
+        $("#chart3").CanvasJSChart(options);
+        $("#chart4").CanvasJSChart(options);
+        $("#chart5").CanvasJSChart(options);
+        $("#chart6").CanvasJSChart(options);
+
+        var options2 = {
+            title: {
+                text: ""
+            },
+            animationEnabled: true,
+            exportEnabled: true,
+            toolTip:{  
+                enabled: true,
+                borderColor: "transparent",
+                fontSize: "15",
+                fontWeight: "bold",
+                showToolTipShadow: "2",
+                backgroundColor: "#303030",
+                content: "<span style='\"'color:#fff; font-style:normal;'\"'>{x}</span> <br/><span style='\"'color:#dbdbdb; font-style:normal; '\"'>Sessions by Units</em> <span style='\"'font-weight: bold; color:#fff; '\"'>{y}</span>",
+            },
+            axisX:{
+                tickColor: "transparent",
+                gridColor: "transparent",
+                labelFontColor: "transparent",
+                lineColor: "transparent"
+            },
+            axisY:{
+                tickColor: "transparent",
+                gridColor: "#e1e1e1",
+                labelFontColor: "#e1e1e1",
+                lineColor: "transparent"
+            },
+            data: [
+                {
+                    lineColor: "#b2b2b2",
+                    lineThickness: 2,
+                    markerColor: "#7cb5ec",
+                    // markerBorderThickness: 3,
+                    // markerBorderColor: "#9bf014",
+                    markerType: "circle",
+                    markerSize: 11,
+                    indexLabelFontSize: 50,
+                    type: "spline", //change it to spline, line, area, column, pie, etc
+                    dataPoints: [
+                        { x: new Date(2010,0,3), y: 50 },
+                        { x: new Date(2010,0,5), y: 500, markerColor: "#434348"},
+                        { x: new Date(2010,0,7), y: 200 },
+                        { x: new Date(2010,0,9), y: 100, markerColor: "#434348" },
+                        { x: new Date(2010,0,11), y: 896, markerColor: "#434348" },
+                        { x: new Date(2010,0,13), y: 354 },
+                        { x: new Date(2010,0,15), y: 400, markerColor: "#434348" },
+                        { x: new Date(2010,0,17), y: 569 },
+                        { x: new Date(2010,0,19), y: 312 },
+                        { x: new Date(2010,0,21), y: 100, markerColor: "#434348" },
+                        { x: new Date(2010,0,23), y: 970 }
+                    ]
+                }
+            ]
+        };
+        $("#chartContainer").CanvasJSChart(options2);
+        $("#chartContainer2").CanvasJSChart(options2);
+        $("#chartContainer3").CanvasJSChart(options2);
+        }
+    </script>
+</head>
+<!-- email_html-2,  -->
+<body class="">
+
+<div class="wrapper">
+    <!-- left_menu_expand => Add for left Bar Expand -->
+    <div class="wpr_content_holder  clearfix">
+
+        <div class="left_menu_list ">
+            <div class="menu_left_logo">
+                <a href="index.html"> <img src="{{}}images/ureka_logo2.png" alt=""> </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <img src="images/hm_home_icon.png" alt="#">
+                        <b class="link_inline"> Home</b>
+                        <b class="link_block"> Home</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/hm_campaign_icon.png" alt="#">
+                        <b class="link_inline"> Campaign</b>
+                        <b class="link_block"> Campaign</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="segment.html">
+                        <img src="images/hm_segment_icon.png" alt="#">
+                        <b class="link_inline"> Segments</b>
+                        <b class="link_block"> Segments</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="newsfeed.html">
+                        <img src="images/hm_newsfeed_icon.png" alt="#">
+                        <b class="link_inline"> Newsfeed</b>
+                        <b class="link_block"> Newsfeed</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/hm_usr_icon.png" alt="#">
+                        <b class="link_inline"> Users</b>
+                        <b class="link_block"> Users</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/hm_setting_icon.png" alt="#">
+                        <b class="link_inline"> Settings</b>
+                        <b class="link_block"> Settings</b>
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/hm_d_imp_icon.png" alt="#" style="width:20px;">
+                    <b class="link_inline" style="font-size:10px"> Data Import</b>
+                    <b class="link_block" style="font-size:10px"> Data Import</b>
+                  </a>
+                </li>
+                <!-- <li> <a href="#"> <img src="images/hm_quires_icon.png" alt="#"> <b> Quires</b> </a> </li> -->
+            </ul>
+        </div>
+
+        <div class="right_sec_outer">
+
+            <div class="rt_tp_hdr_outer clearfix">
+
+                <div class="hdr_profile_sec">
+
+                    <a class="hdr_menu_btn" href="#"> <img src="images/hdr_menu_btn2-new.png" alt="#"> </a>
+                    <p>
+                        <span>Beats by dr.dre</span>
+                    </p>
+
+                </div>
+
+                <div class="hdr_lft_list tp_hdr_list">
+
+                    <ul>
+
+                        <li><a href="#"> <img src="images/hdr_folder_icon-new.png" alt="#"> </a></li>
+                        <li><a href="#"> <img src="images/hdr_filter_icon-new.png" alt="#"> </a></li>
+                        <li><a href="#"> <img src="images/hdr_inbox_icon-new.png" alt=""> </a></li>
+                        <li class="hdr_alert"><a href="#"> <img src="images/hdr_alert_icon-new.png" alt=""> </a> <i></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hdr_rit_search_sec clearfix">
+
+                    <div class="tp_hdr_search_sec">
+                        <form id="ent-serach-top" action="/search">
+                            <div class="inputWrap">
+                                <input class="top-search" type="search" placeholder="Search Anything Here....">
+                                <input class="search_btn" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#"> <img src="images/hdr_profile_menu_icon-new.png" alt="#"> </a>
+                    <div class="hdr_rt_drop_down">
+                        <ul>
+                            <li><a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile </a></li>
+                            <li><a href="#"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--   -->
+            <div class="rt_content_outer add">
+                <div class="totals">
+                    <div class="total_col">
+                        <strong>Users</strong>
+                        <span class="count">1500000</span>
+                    </div>
+                    <div class="total_col">
+                        <strong>Campaign Total Sent <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                        <span class="count">1200000</span>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <span>50</span>
+                                    <em><i class="fa fa-envelope" aria-hidden="true"></i> Email</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>10</span>
+                                    <em><i class="fa fa-paper-plane" aria-hidden="true"></i> Push</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>05</span>
+                                    <em><i class="fa fa-archive" aria-hidden="true"></i> In App</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_col">
+                        <strong>Campaign Total Fail <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                        <span class="count">900000</span>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <span>10</span>
+                                    <em><i class="fa fa-envelope" aria-hidden="true"></i> Email</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>98</span>
+                                    <em><i class="fa fa-paper-plane" aria-hidden="true"></i> Push</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>35</span>
+                                    <em><i class="fa fa-archive" aria-hidden="true"></i> In App</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_col">
+                        <strong>Campaign In Queue <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                        <span class="count">750000</span>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <span>24</span>
+                                    <em><i class="fa fa-envelope" aria-hidden="true"></i> Email</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>36</span>
+                                    <em><i class="fa fa-paper-plane" aria-hidden="true"></i> Push</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>45</span>
+                                    <em><i class="fa fa-archive" aria-hidden="true"></i> In App</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_col">
+                        <strong>Newsfeed Clicks <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                        <span class="count">9850000</span>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <span>14</span>
+                                    <em><i class="fa fa-windows" aria-hidden="true"></i> IOS</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>35</span>
+                                    <em><i class="fa fa-android" aria-hidden="true"></i> Android</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>30</span>
+                                    <em><i class="fa fa-apple" aria-hidden="true"></i> Web</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_col">
+                        <strong>Newsfeed Views <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                        <span class="count">600000</span>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <span>01</span>
+                                    <em><i class="fa fa-envelope" aria-hidden="true"></i> Email</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>02</span>
+                                    <em><i class="fa fa-paper-plane" aria-hidden="true"></i> Push</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>10</span>
+                                    <em><i class="fa fa-archive" aria-hidden="true"></i> In App</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_col">
+                        <strong><a href="#" class="quick_acts"><i class="fa fa-plus" aria-hidden="true"></i> Quick Actions</a></strong>
+                        <ul class="total_drop">
+                            <li>
+                                <a href="#">
+                                    <em><i class="fa fa-plus" aria-hidden="true"></i> Create Email</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em><i class="fa fa-rocket" aria-hidden="true"></i> Create in App</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em><i class="fa fa-plus" aria-hidden="true"></i> Create Push</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em><i class="fa fa-rss" aria-hidden="true"></i> Newsfeed</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner_content_area">
+                    <div class="content_widget">
+                        <header class="sec_header">
+                            <div class="align_left">
+                                <strong class="title">Display Data <i class="fa fa-caret-down" aria-hidden="true"></i></strong>
+                                <span class="chart_date">Sep 1,2018 – Sep 30,2018</span>
+                            </div>
+                            <div class="align_right">
+                                <form action="/">
+                                    <select>
+                                        <option>Weekly</option>
+                                        <option>Monthly</option>
+                                        <option>Yearly</option>
+                                    </select>
+                                    <select>
+                                        <option>All Apps</option>
+                                        <option>Purchased Apps</option>
+                                        <option>Free Apps</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </header>
+                        <div class="charts">
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>310 <em class="red">-30.6% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>Monthly Active Users <br> (On Sep 30, 2018)</span>
+                                </div>
+                                <div id="chart1" class="chartContainer"></div>
+                            </div>
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>24 <em class="red">-28.1% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>Daily Active Users <br> (Average)</span>
+                                </div>
+                                <div id="chart2" class="chartContainer"></div>
+                            </div>
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>264 <em class="red">-31.6% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>New Users <br> (Total)</span>
+                                </div>
+                                <div id="chart3" class="chartContainer"></div>
+                            </div>
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>5.7 3% <em class="red">-29.6% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>Stickness <img src="images/icon_caution.png" alt="#" class="img_caution"><br> (Average)</span>
+                                </div>
+                                <div id="chart4" class="chartContainer"></div>
+                            </div>
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>161 <em class="red">-49.5% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>Daily Sessions <br> (Average)</span>
+                                </div>
+                                <div id="chart5" class="chartContainer"></div>
+                            </div>
+                            <div class="chart_col">
+                                <div class="chart_text">
+                                    <strong>0.38 <em class="red">-51.1% <i class="fa fa-caret-down" aria-hidden="true"></i></em></strong>
+                                    <span>Daily sessions PER MAU <br> (Average)</span>
+                                </div>
+                                <div id="chart6" class="chartContainer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_widget">
+                        <header class="sec_header">
+                            <div class="align_left">
+                                <strong class="title">Detail Statistics</strong>
+                            </div>
+                            <div class="align_right add">
+                                <!-- <form action="/">
+                                    <select>
+                                        <option>By Hour</option>
+                                        <option>By Minute</option>
+                                        <option>By Seconds</option>
+                                    </select>
+                                    <select>
+                                        <option>Usage Analytics</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                    </select>
+                                </form> -->
+                                <ul class="indicators">
+                                    <li><em class="android"></em><span>android</span></li>
+                                    <li><em class="ios"></em><span>ios</span></li>
+                                </ul>
+                                <ul class="custom_tabs inline_list">
+                                    <li class="active"><a href="#view_tab">View</a></li>
+                                    <li><a href="#click_tab">Click</a></li>
+                                    <li><a href="#through_tab">Click Through</a></li>
+                                </ul>
+                            </div>
+                        </header>
+                        <div class="charts">
+                            <div id="view_tab" class="tab active">
+                                <div class="chart_col fluid">
+                                    <div id="chartContainer" class="chartContainer"></div>
+                                </div>
+                            </div>
+                            <div id="click_tab" class="tab">
+                                <div class="chart_col fluid">
+                                    <div id="chartContainer2" class="chartContainer"></div>
+                                </div>
+                            </div>
+                            <div id="through_tab" class="tab">
+                                <div class="chart_col fluid">
+                                    <div id="chartContainer3" class="chartContainer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer_outer">
+      <p> &copy; Engagement Platform 2018 </p>
+    </div>
+</div>
+
+<script src="js/my_script.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery-resizable.js"></script>
+<script type="text/javascript" src="js/jquery-steps.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    // var has_drop = $('.total_col');
+    // $(has_drop).hover(function(e) {
+
+    //   e.preventDefault();
+    //     if( $(this).hasClass('active') ){
+    //         $(this).removeClass('active');
+    //     }
+    //     else{
+    //         $(this).toggleClass('active');
+    //     }
+
+    //     var $this = $(this);
+    //     if (
+    //         $this.closest('.total_col').find('.total_drop').hasClass('active')) {
+    //         $this.closest('.total_col').find('.total_drop').removeClass('active');
+    //         $this.closest('.total_col').find('.total_drop').slideUp(350);
+    //     }
+    //     else {
+    //         $this.parent().parent().find('li .inner').removeClass('active');
+    //         $this.parent().parent().find('li .inner').slideUp(350);
+    //         $this.closest('.total_col').find('.total_drop').toggleClass('active');
+    //         $this.closest('.total_col').find('.total_drop').slideToggle(400);
+    //     }
+    // });
+    //TABS
+
+    $('.custom_tabs a').click(function(event){
+		event.preventDefault();
+        $('.custom_tabs li').removeClass('active');
+        $(this).closest('li').addClass('active');
+        var currentTab = $(this).attr('href');
+        $('.charts .tab').removeClass('active');  
+        $(currentTab).addClass('active');
+	});
+
+
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text() 
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    // Class Add/ Remove On Wrapper
+    $(".hdr_menu_btn").click(function(){
+        $(".wpr_content_holder ").toggleClass("left_menu_expand");
+    });
+    // Left Header button active on click Function
+    $(".left_menu_list ul li a").click(function(){
+        $(".left_menu_list ul li a").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    //  campaigns_type Section add/Remove class on parent
+    $("#campaigns_type").change(function(){
+
+    var lang_var = $("#campaigns_type option:selected").val();
+
+    $("body").attr("class",lang_var);
+
+    });
+
+    // Compose In-App Messages Tab Function
+        $(".pre_comp_title_icons ul li a").click(function(e){
+            $(".pre_comp_title_icons ul li a").removeClass("active");
+            $(this).addClass("active");
+
+            var this_id = $(this).attr("href");
+            $(".comp_det_sec").hide();
+            $(this_id).show( );
+            return false;
+
+            });
+    // Top Header-right Drop Down Function
+        $(".hdr_rit_search_sec a").click(function(){
+        $(".hdr_rt_drop_down").slideToggle();
+
+        });
+        $(".hdr_rt_drop_down ul li a").click(function(){
+        $(this).parents(".hdr_rt_drop_down") .slideUp();
+
+        });
+
+    // Step function
+        $('#demo').steps({
+            startAt: 0,
+            showBackButton: true,
+            showFooterButtons: true,
+        });
+    //////////////////
+
+        $(".con_event_dropdown span ").click(function(e){
+        $(".con_event_dropdown ul").slideToggle();
+
+        });
+
+        $(".con_event_dropdown a").click(function(e){
+        $(".con_event_dropdown ul ").slideUp();
+
+        });
+
+    //    Step-5 Tab with Dropdown
+        $(".con_event_dropdown li a").click(function() {
+
+        var test = $(this).text();
+        $('.con_event_dropdown span').text('');
+        $('.con_event_dropdown span').text(test);
+
+        var this_id = $(this).attr("tab");
+        $('.conversion_event_step').removeClass('active');
+        $('#' + this_id).addClass('active');
+        });
+
+
+        $(".rt_aligning_btn ul li a").click(function(e){
+        $(".rt_aligning_btn ul li a").removeClass("active");
+        $(this).addClass("active");
+        });
+
+
+    // And Or Toggle Btns Effects
+
+    $(".and_or_toggle_btn ").click(function() {
+    $(this).toggleClass('active');
+
+
+    });
+
+
+    //  Tab Step-3
+    // tab Function
+    $(".select_button a").click(function(e){
+        $(".select_button a").removeClass("active");
+        $(this).addClass("active");
+
+        var this_id = $(this).attr("href");
+        $(".sel_btn_det").fadeOut('fast');
+        $(this_id).fadeIn('slow');
+        return false;
+    });
+
+    // Sec-2 - Email
+
+    //  step-1 temp_Add Remove class
+
+    $(".tamp_list_outer ul li a").click(function(e){
+    $(".tamp_list_outer ul li a").removeClass("active");
+    $(this).addClass("active");
+    });
+
+    //
+    //  Compose In-App Messages Tab Function
+    $(".pre_comp_title_icons2 ul li a").click(function(e){
+    $(".pre_comp_title_icons2 ul li a").removeClass("active");
+    $(this).addClass("active");
+
+    var this_id = $(this).attr("href");
+        $(".comp_det_sec").fadeOut('fast');
+    $(this_id).fadeIn('slow');
+    return false;
+
+    });
+
+
+    $(".lst_tbl_drop_outer span").click(function(e){
+    $(this).parent(".lst_tbl_drop_outer").find("ul").slideToggle('slow');
+    return false;
+
+    });
+    $(".lst_tbl_drop_outer ul li").click(function(e){
+    $(this).parent(".lst_tbl_drop_outer ul").slideUp('slow');
+    return false;
+
+    });
+
+
+
+    // Splitter function
+    $(".panel-left").resizable({
+    handleSelector: ".splitter",
+    resizeHeight: false,
+    resizeWidth: true
+    });
+
+    //    Newsfeed title Detail
+
+    // $(".nf_seg_name a").click(function(){
+    //   $(this).parent().find('.nf_seg_name_detail').slideToggle(500);
+    // });
+
+    //   Listing-left-bottom- Sub-Menu
+
+    $(".db_list_left_sublist h3").click(function(){
+        $(this).toggleClass('list_left_sublist_active');
+        $(this).parent().find('ul').slideToggle(500);
+    });
+
+
+
+
+    });
+
+    //   listing to newsfeed show ///////////
+    $("#campaigns_type2").change(function(){
+
+    var lang_var = $("#campaigns_type2 option:selected").val();
+
+    $("body").attr("class",lang_var);
+    $(".db_content_holder").show();
+    $(".db_content_listing_holder").hide();
+    });
+    ////////////////////////
+
+</script>
+<script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
+</body>
+</html>

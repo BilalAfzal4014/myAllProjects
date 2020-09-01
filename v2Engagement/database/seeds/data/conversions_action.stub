@@ -1,0 +1,15 @@
+
+INSERT INTO `attribute_data` ( `company_id`, `row_id`, `code`, `value`, `created_by`, `created_at`, `updated_by`, `updated_at`, `is_import`, `data_type`) VALUES
+(COMPANY_ID, ROW_ID, 'start_session', 'open()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'start_session', 'openScreen()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'start_session', 'savePayment()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'start_session', 'doCheckout()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'custom_event', 'makePublish()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'custom_event', 'viewCards()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'conversion'),
+(COMPANY_ID, ROW_ID, 'app_id', 'app.coredirection.com', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'app_launch', 'open();', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'app_launch', 'makePublish()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'savings', 'openScreen()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'my information', 'savePayment()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'search_location', 'doCheckout()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action'),
+(COMPANY_ID, ROW_ID, 'help', 'viewCards()', 0, '2018-08-18 08:13:00', 0, '2018-08-18 08:13:00', 0, 'action');

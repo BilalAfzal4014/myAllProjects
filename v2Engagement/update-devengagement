@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home/devengagement/public_html
+git pull origin development
+composer.phar dump-autoload
+php artisan config:cache

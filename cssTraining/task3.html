@@ -1,0 +1,161 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .outer_content {
+            overflow: hidden;
+        }
+
+        .content {
+            float: left;
+            width: 50%;
+        }
+
+        .content_inner {
+            padding: 20px 20px;
+        }
+
+        .slider_pagination_gather {
+            width: 95%;
+        }
+
+        .slider {
+            height: 170px;
+            width: 99%;
+            border: 2px solid black;
+            margin-top: 52px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .slider_pagination {
+            padding: 0px;
+            text-align: center;
+        }
+
+        .slider_pagination li {
+            height: 15px;
+            width: 15px !important;
+            border: 1px solid black;
+            border-radius: 100px;
+            display: inline-block;
+        }
+
+        .slider_pagination li.active {
+            background: black;
+        }
+
+        .menu_holder{
+            overflow: hidden;
+            /*height: 40px;*/
+            display: table;
+        }
+
+        .menu {
+            overflow: hidden;
+            display: table-cell;
+        }
+
+        .menu li {
+            float: left;
+            border: 1px solid black;
+            padding: 2px 7px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .padding_div {
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .lower_content1 {
+            float: left;
+            width: 65%;
+        }
+
+        .lower_content2 {
+            float: left;
+            width: 35%;
+        }
+
+        .lower_content2 img {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div class="main">
+        <div class="outer_content">
+            <div class="content">
+                <div class="content_inner">
+                    <h1>Product Name</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look like
+                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                        purpose (injected humour and the like).</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content_inner">
+                    <div class="slider_pagination_gather">
+                        <div class="slider"></div>
+                        <ul class="slider_pagination">
+                            <li class="active"><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer_content">
+            <div class="menu_holder">
+                <ul class="menu">
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Design</a></li>
+                    <li><a href="">Specs</a></li>
+                </ul>
+            </div>
+            <div class="content_inner" style="padding-top: 0px">
+                <div class="content_inner padding_div">
+                    <div class="lower_content1">
+                        <h1>Over View</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                            as
+                            their default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                            in
+                            their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes on
+                            purpose (injected humour and the like).</p>
+                    </div>
+                    <div class="lower_content2">
+                        <img src="https://wcs.smartdraw.com/bar-graph/img/simplebarchart.jpg?bn=1510011145" alt="css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

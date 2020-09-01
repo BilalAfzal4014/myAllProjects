@@ -1,0 +1,7 @@
+1- npm init
+2- install express dependency
+3- install nodemon dependency // for auto restarting server
+4- install morgan dependency // for tracking and analysis of request
+5- install body parser dependency // for having a json formatted request body
+6- install mysql dependency // for asyn query calls
+7- another dependency sync-mysql // for sync calls

@@ -1,0 +1,126 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .outer_content {
+            border: 5px solid black;
+            height: calc(100vh - 10px);
+        }
+
+        .inner_content {
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+            height: 60%;
+            margin-top: 40px;
+        }
+
+        .first_gap {
+            height: 40px;
+            border-bottom: 5px solid black;
+        }
+
+        .first_gap_right_div {
+            height: 100%;
+            border-left: 5px solid black;
+            width: 30%;
+            float: right;
+        }
+
+        .first_gap_right_div input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        .second_gap {
+            height: 75%;
+            border-bottom: 5px solid black;
+        }
+
+        .third_gap {
+            height: 13%;
+            width: 100%;
+            display: table;
+        }
+
+        .third_gap_first_div {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .third_gap button {
+            background: black;
+            border: black;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        .fourth_gap {
+            height: 55%;
+            display: table;
+            width: 100%;
+        }
+
+        .fourth_gap_first_div {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .fourth_gap button {
+            background: none;
+            border: 5px solid black;
+            border-radius: 3px;
+            padding: 50px 80px;
+        }
+
+        .fourth_gap .margin_button{
+            margin-left: 115px;
+        }
+    </style>
+</head>
+<body>
+<div class="outer_content">
+    <div class="inner_content">
+        <div class="first_gap">
+            <div class="first_gap_right_div">
+                <input type="search"/>
+            </div>
+        </div>
+        <div class="second_gap">
+            <div class="first_gap_right_div">
+
+            </div>
+        </div>
+        <div class="third_gap">
+            <div class="third_gap_first_div">
+                <div class="third_gap_second_div">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="fourth_gap">
+            <div class="fourth_gap_first_div">
+                <div class="fourth_gap_second_div">
+                    <button></button>
+                    <button class="margin_button"></button>
+                    <button class="margin_button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

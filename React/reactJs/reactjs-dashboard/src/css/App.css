@@ -1,0 +1,16 @@
+.user-edit-modal .avatar-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    max-width: 100%;
+}
+
+.pagination-alignment {
+    float: right;
+}

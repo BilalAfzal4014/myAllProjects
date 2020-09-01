@@ -1,0 +1,122 @@
+[
+  {
+    "code": "app_id",
+    "value": "app.coredirection.com",
+    "data_type": "conversion"
+  },
+  {
+    "code": "start_session",
+    "value": "open()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "start_session",
+    "value": "openScreen()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "start_session",
+    "value": "savePayment()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "start_session",
+    "value": "doCheckout()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "custom_event",
+    "value": "makePublish()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "custom_event",
+    "value": "viewCards()",
+    "data_type": "conversion"
+  },
+  {
+    "code": "app_id",
+    "value": "app.coredirection.com",
+    "data_type": "action"
+  },
+  {
+    "code": "app_launch",
+    "value": "open()",
+    "data_type": "action"
+  },
+  {
+    "code": "app_launch",
+    "value": "makePublish()",
+    "data_type": "action"
+  },
+  {
+    "code": "savings",
+    "value": "openScreen()",
+    "data_type": "action"
+  },
+  {
+    "code": "my information",
+    "value": "savePayment()",
+    "data_type": "action"
+  },
+  {
+    "code": "search_location",
+    "value": "doCheckout()",
+    "data_type": "action"
+  },
+  {
+    "code": "help",
+    "value": "viewCards()",
+    "data_type": "action"
+  },
+  {
+    "code": "app_launch",
+    "value": "open();",
+    "data_type": "action"
+  },
+  {
+    "code": "user_id",
+    "value": "2",
+    "data_type": "user"
+  },
+  {
+    "code": "device_type",
+    "value": "ios",
+    "data_type": "user"
+  },
+  {
+    "code": "device_token",
+    "value": "d07chL7-cbY:APA91bHUgUCedYolSfpatH7cdZvvtqPi_tMuKRy8Hblkvl-OP1fhNK_xu9EwsZlFLg_IrNo8yUEt4kHVuUfCyVUek4qqvP-XIUnGHglvZbkT7UVkV_WyUnuZGx_UXVPC99MPl8L92vns",
+    "data_type": "user"
+  },
+  {
+    "code": "fire_base_key",
+    "value": "AAAAHtc5HBo:APA91bH3hvkYhGYPzJ9vdFETqXKwBFJShdMExDbMbp4BYpNGAhZEq-r7H0QjYkTVGMPCqA0qkpJVxpkBiCOpFiGNVgRiHdmvTEIqbO-qWx7d36kfvPDzvHs0CDnv-1suENbVVSz7dl1oYwavUtude4g-8A-hyWPtHQ",
+    "data_type": "user"
+  },
+  {
+    "code": "app_name",
+    "value": "DevEngagement",
+    "data_type": "user"
+  },
+  {
+    "code": "app_id",
+    "value": "com.devengagement.v2",
+    "data_type": "user"
+  },
+  {
+    "code": "country",
+    "value": "PK",
+    "data_type": "user"
+  },
+  {
+    "code": "is_login",
+    "value": "1",
+    "data_type": "user"
+  },
+  {
+    "code": "lang",
+    "value": "en",
+    "data_type": "user"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "code": "user_id",
+    "type": "General",
+    "name": "user_id",
+    "alias": "user_id",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "firstname",
+    "type": "General",
+    "name": "firstname",
+    "alias": "firstname",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "lastname",
+    "type": "General",
+    "name": "lastname",
+    "alias": "lastname",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "email",
+    "type": "General",
+    "name": "email",
+    "alias": "email",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "date_of_birth",
+    "type": "General",
+    "name": "date_of_birth",
+    "alias": "date_of_birth",
+    "data_type": "DATE",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "last_login",
+    "type": "General",
+    "name": "last_login",
+    "alias": "last_login",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "firstname",
+    "type": "General",
+    "name": "firstname",
+    "alias": "firstname",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "lastname",
+    "type": "General",
+    "name": "lastname",
+    "alias": "lastname",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "email",
+    "type": "General",
+    "name": "email",
+    "alias": "email",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "file_id",
+    "type": "General",
+    "name": "file_id",
+    "alias": "file_id",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "version",
+    "type": "General",
+    "name": "version",
+    "alias": "version",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "build",
+    "type": "General",
+    "name": "build",
+    "alias": "build",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "app_name",
+    "type": "General",
+    "name": "app_name",
+    "alias": "app_name",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "user_token",
+    "type": "General",
+    "name": "user_token",
+    "alias": "user_token",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "language",
+    "type": "General",
+    "name": "language",
+    "alias": "language",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "longitude",
+    "type": "General",
+    "name": "longitude",
+    "alias": "longitude",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "latitude",
+    "type": "General",
+    "name": "latitude",
+    "alias": "latitude",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "app_id",
+    "type": "General",
+    "name": "app_id",
+    "alias": "app_id",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "phone_number",
+    "type": "General",
+    "name": "phone_number",
+    "alias": "phone_number",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "profile_image",
+    "type": "General",
+    "name": "profile_image",
+    "alias": "profile_image",
+    "data_type": "VARCHAR",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  },
+  {
+    "code": "last_login",
+    "type": "General",
+    "name": "last_login",
+    "alias": "last_login",
+    "data_type": "DATE",
+    "is_deleted": "0",
+    "created_by": "1",
+    "updated_by": "1"
+  }
+]

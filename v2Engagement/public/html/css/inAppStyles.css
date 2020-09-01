@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+*, html {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.rt_content_outer.template_page{ padding-bottom: 0; }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    outline: none;
+}
+
+select, textarea, input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+input [type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0px none;
+    outline: none;
+    box-shadow: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+*:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: arial;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* .container { width:558px; padding:20px; margin:auto; background: #b5b5b5;} */
+.templete {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    padding: 0px;
+    background: #f0f0f0;
+    display: block;
+}
+
+.tp_img_text {
+    padding: 10px 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+/* .scroll-bar-fullscreen {
+    /*margin-top: -60px;
+    max-height: 150px;
+    overflow-y: auto;
+} */
+
+.tp_img_text span {
+    margin-left: 5px;
+    width: 28%;
+    height: 140px;
+    overflow: hidden;
+    background: #e1e1e1 url(http://devengagement.engagiv.com/assets/images/upload_img.png) no-repeat center center;
+    background-size: 60% !important;
+    position: relative;
+    float: left;
+}
+
+.tp_img_text span img {
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+}
+
+.tp_img_text input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.tp_right_sec {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 60%;
+    float: left;
+    margin: 0;
+}
+
+.dialouge_width_and_scroll {
+    max-height: 150px;
+    overflow-y: auto;
+    width: 69.996%;
+}
+
+.max_width_class {
+    width: 100%;
+}
+
+.tp_right_sec h2 {
+    color: #000;
+    word-break: break-all;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    /*max-height: 47px;*/
+    overflow: hidden;
+}
+
+.tp_right_sec p {
+    color: #666;
+    word-break: break-all;
+    font-size: 17px;
+    font-weight: 100 !important;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    text-align: unset; /*max-height: 148px;*/
+}
+
+/*  center section  */
+
+.img_uploader {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: #e1e1e1;
+    overflow: hidden;
+}
+
+.img_uploader label {
+    width: 100%;
+    /* min-height: 400px; */
+    min-height: calc(100vh - 50vh);
+    display: block;
+    position: relative;
+    background: url(http://devengagement.engagiv.com/assets/images/upload_img.png) no-repeat center center;
+}
+
+.img_uploader label img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* max-height: 600px; */
+}
+
+.img_uploader label input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* buttons Section */
+.btm_btns {
+    text-align: center;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    padding: 21px 0;
+    background:#f0f0f0;
+}
+.scroll_template{
+    max-height: calc(100vh - 159px);
+    overflow: auto;
+}
+.links_holder{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.btm_btns a {
+    word-break: break-all;
+    width: 46%;
+    line-height: 50px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+    background: #0071bd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.btm_btns a:last-child {
+    background: #cd2026;
+}
+
+/* Templete - Dialogue */
+.templete.dialogue .tp_img_text {
+    padding: 10px;
+    margin: 0;
+    background: #f9f9f9;
+}
+@media screen and (max-width: 767px) {
+    .btm_btns.dialogue_btn {
+        overflow: hidden;
+    }
+    .tp_img_text span img {
+        width: auto;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 414px) {
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tp_img_text span {
+        height: 106px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tp_img_text span {
+        height: 100px;
+    }
+
+    .btm_btns a {
+        line-height: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 374px) and (min-width: 300px) {
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tp_img_text span {
+        height: 84px;
+    }
+
+    .tp_right_sec h2 {
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    .tp_right_sec p {
+        font-size: 13px;
+    }
+
+    .btm_btns a {
+        line-height: 36px;
+        width: 40%;
+    }
+
+    .img_uploader label {
+        min-height: 350px;
+    }
+
+}
