@@ -301,6 +301,32 @@ router.get("/download-from-some-where", function (req, res) {
 
 });
 
+
+
+router.get("/download-from-some-where-1", function (req, res) {
+    axios({
+        method: 'get',
+        url: 'http://bit.ly/2mTM3nY',
+        responseType: 'stream'
+    }).then((response) => {
+        let bufferCollector = [];
+
+        response.data.on("data", function(buffer){
+            bufferCollector.push(buffer);
+        });
+
+        response.data.on("end", function(){
+            let fileBuffer = Buffer.concat(bufferCollector);
+            res.write(fileBuffer);
+            res.end();
+        });
+    }).catch((...error) => {
+
+    });
+
+});
+
+
 router.get("/download-movie-some-where", function (req, res) {
     axios({
         method: 'get',
