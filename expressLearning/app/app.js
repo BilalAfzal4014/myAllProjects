@@ -1,9 +1,17 @@
+const path = require("path");
 const express = require("express");
 const app = express();
 const userRoutes = require("./routes/userRoutes");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+//console.log(__dirname); //current directory
+// var/www/html/checkout-spike/app
+
+//console.log(path.join(__dirname, '../views'));
+//one step back into current directory and then into views folder(if any view folder)
+// /var/www/html/checkout-spike/views
 
 app.use(function (req, res, next) {
     console.log("This will console when url hits");
