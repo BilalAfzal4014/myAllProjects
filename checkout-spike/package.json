@@ -1,0 +1,25 @@
+{
+  "name": "checkout-spike",
+  "version": "1.0.0",
+  "description": "Just a test spike to play with checkout",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "EMPG",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "checkout-sdk-node": "^1.0.15",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

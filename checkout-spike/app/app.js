@@ -1,20 +1,16 @@
 const path = require("path");
 const express = require("express");
 const app = express();
-const userRoutes = require("./routes/userRoutes");
+const router = express.Router();
+const checkoutRoutes = require("./routes/checkout-routes");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-//console.log(__dirname); //current directory
-// var/www/html/checkout-spike/app
+app.set('views engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'))
 
-//console.log(path.join(__dirname, '../views'));
-//one step back from the current directory and then into views folder(if any view folder)
-// /var/www/html/checkout-spike/views
-
-app.use(function (req, res, next) {
-    console.log("This will console when url hits");
+app.use(function(req, res, next){
     res.header("Access-control-allow-origin", "*");
     res.header("Access-control-allow-headers", "authorization, content-type");
 
@@ -27,7 +23,8 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use("/", userRoutes);
+router.use("/checkout", checkoutRoutes);
+app.use("/v1", router);
 
 app.use(function (req, res, next) {
     let error = new Error("Not Found");
@@ -45,3 +42,4 @@ app.use(function (error, req, res, next) {
 });
 
 module.exports = app;
+

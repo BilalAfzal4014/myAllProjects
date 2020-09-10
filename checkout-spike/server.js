@@ -1,0 +1,6 @@
+require('dotenv').config();
+
+const http = require("http");
+const app = require("./app/app");
+
+http.createServer(app).listen(3000);
