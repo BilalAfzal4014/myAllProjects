@@ -183,6 +183,7 @@
         axios.post('http://localhost:3000/v1/checkout/make-payment', paymentObj)
             .then(function (response) {
                 console.log("response", response);
+                console.log("redirectLink", response.data.redirectLink);
                 //window.location.href = (response.data.redirectLink);
                 //window.location.replace(response.data.redirectLink);
                 window.open(response.data.redirectLink);
