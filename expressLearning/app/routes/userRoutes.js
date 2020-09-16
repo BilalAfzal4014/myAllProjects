@@ -474,6 +474,12 @@ router.post("/temp-file-upload", function (req, res) {
         //send the response or make a completed callback here...
     });
 
+    target.on('finish', function () {
+        //6
+        //console.log('All done!');
+        //send the response or make a completed callback here...
+    });
+
 });
 
 router.post("/actual-upload-for-temp-file", function (req, res) {
