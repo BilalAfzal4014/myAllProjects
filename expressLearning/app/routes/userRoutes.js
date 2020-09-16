@@ -9,6 +9,7 @@ let eventEmitter = require("../eventsManager/eventsSetup");
 let customMiddleware = require("../middlewares/customMiddleware");
 const userServices = require("../services/userServices");
 const axios = require("axios");
+const request = require('request');
 const FormData = require('form-data');
 
 console.log("i will run only once when the server will run and that too without hitting url");
@@ -33,7 +34,7 @@ router.get("/email", function (req, res, next) {
 
     let mailOptions = {
         from: 'bilalafzal4014@gmail.com',
-        to: 'majidashraf81@gmail.com', //comma seperated emails for multiple clients
+        to: 'majidashraf81@gmail.com', //comma separated emails for multiple clients
         subject: 'Sending Email using Node.js',
         text: 'That was easy!'
     };
@@ -302,7 +303,6 @@ router.get("/download-from-some-where", function (req, res) {
 });
 
 
-
 router.get("/download-from-some-where-1", function (req, res) {
     axios({
         method: 'get',
@@ -311,11 +311,11 @@ router.get("/download-from-some-where-1", function (req, res) {
     }).then((response) => {
         let bufferCollector = [];
 
-        response.data.on("data", function(buffer){
+        response.data.on("data", function (buffer) {
             bufferCollector.push(buffer);
         });
 
-        response.data.on("end", function(){
+        response.data.on("end", function () {
             let fileBuffer = Buffer.concat(bufferCollector);
             res.write(fileBuffer);
             res.end();
@@ -438,6 +438,61 @@ router.get("/download-file-from-other-file", function (req, res) {
 
 router.get("/download-file-send-res", function (req, res) {
     userServices.downloadFileSendRes(res);
+});
+
+router.post("/temp-file-upload", function (req, res) {
+
+    let target = request.post("http://localhost:4001/actual-upload-for-temp-file", function(error, resp, body){
+        //5
+        if(!error){
+            body = JSON.parse(body);
+            return res.status(body.status).json(body);
+        }
+    });
+    req.pipe(target);
+
+    target.on('response', function (response) {
+        //2
+        //console.log("Res", response.statusCode);
+        response.on('data', function (data) {
+            //3
+            // compressed data as it is received
+            //console.log(data);
+            //console.log('received ' + data.length + ' bytes of compressed data')
+        })
+    });
+
+    target.on('data', function (data) {
+        //1
+        //console.log("Res", data);
+
+    });
+
+    target.on('end', function () {
+        //4
+        //console.log('All done!');
+        //send the response or make a completed callback here...
+    });
+
+});
+
+router.post("/actual-upload-for-temp-file", function (req, res) {
+
+    const writeStream = fs.createWriteStream("testing.txt");
+
+    req.on("data", function (buffer) {
+        writeStream.write(buffer);
+    });
+
+    req.on("end", function () {
+        writeStream.end();
+        return res.status(200).json({
+            status: 200,
+            data: {},
+            message: "File uploaded successfully actual"
+        });
+    });
+
 });
 
 module.exports = router;

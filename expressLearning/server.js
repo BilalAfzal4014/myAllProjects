@@ -59,5 +59,9 @@ readStream.on("data", function (buffer) {
     writeStream.write(buffer);
 });
 
+readStream.on("end", function () {
+    writeStream.end();
+});
+
 readStream.pipe(writeStream);*/
 //// usage of stream buffer ends ////
