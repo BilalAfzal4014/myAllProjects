@@ -501,4 +501,73 @@ router.post("/actual-upload-for-temp-file", function (req, res) {
 
 });
 
+
+router.post("/temp-file-upload-multipart", function (req, res) {
+
+    let target = request.post("http://localhost:4001/actual-file-upload-multipart", function(error, resp, body){
+        //5
+        if(!error){
+            body = JSON.parse(body);
+            return res.status(body.status).json(body);
+        }
+    });
+    req.pipe(target);
+
+    target.on('response', function (response) {
+        //2
+        //console.log("Res", response.statusCode);
+        response.on('data', function (data) {
+            //3
+            // compressed data as it is received
+            //console.log(data);
+            //console.log('received ' + data.length + ' bytes of compressed data')
+        })
+    });
+
+    target.on('data', function (data) {
+        //1
+        //console.log("Res", data);
+
+    });
+
+    target.on('end', function () {
+        //4
+        //console.log('All done!');
+        //send the response or make a completed callback here...
+    });
+
+    target.on('finish', function () {
+        //6
+        //console.log('All done!');
+        //send the response or make a completed callback here...
+    });
+
+});
+
+
+
+router.post("/actual-file-upload-multipart", function(req, res){
+
+    const upload = multer({dest: 'app/uploads/images'}).single('file');
+    upload(req, res, function (err) {
+        if (err instanceof multer.MulterError) {
+            console.log("error 1", err);
+            // A Multer error occurred when uploading.
+        } else if (err) {
+            console.log("error 2", err);
+            // An unknown error occurred when uploading.
+        }
+
+        //every thing works fine here
+        res.status(200).json({
+            status: 200,
+            data: {
+                text: req.body.text
+            },
+            message: "File uploaded successfully"
+        });
+    });
+
+});
+
 module.exports = router;
