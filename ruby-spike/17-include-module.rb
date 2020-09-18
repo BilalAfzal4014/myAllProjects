@@ -4,7 +4,7 @@ isFileIncluded = require_relative "./ruby-modules/1-module.rb";
 
 puts "after require";
 
-MainModuleClone = extend MainModule;
+MainModuleClone = include MainModule;
 puts "after include"
 
 #we have include a module above
@@ -22,15 +22,3 @@ DoubleNestedModuleClone = include NestedModuleClone::DoubleNestedModule;
 MainModuleClone.MainModuleFun();
 NestedModuleClone.NestedModuleFun();
 DoubleNestedModuleClone.DoubleNestedModuleFun();
-
-
-
-# possibilities
-# MainModuleClone = include MainModule;
-# NestedModuleClone = include MainModuleClone::NestedModule;
-#
-# MainModuleClone = include MainModule;
-# NestedModuleClone = extend MainModuleClone::NestedModule;
-#
-# MainModuleClone = include MainModule;
-# NestedModuleClone = extend MainModule::NestedModule;
