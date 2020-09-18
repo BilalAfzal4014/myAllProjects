@@ -1,10 +1,31 @@
-module Tools    #module name must be start with a capital letter
-    def sayHi(name)
-        puts "Hello Mr.#{name}";
+#module name must be start with a capital letter
+
+
+puts "i am in 1-module";
+
+module MainModule
+    puts "I am MainModule Module";
+
+    def MainModuleFun
+        puts "I am MainModule function";
     end
 
-    def sayBye(name)
-        puts "Bye Mr.#{name}";
+    module NestedModule
+
+        puts "I am NestedModule module";
+
+        def NestedModuleFun
+            puts "I am NestedModule function";
+        end
+
+        module DoubleNestedModule
+
+            puts "I am DoubleNestedModule module";
+
+            def DoubleNestedModuleFun
+                puts "I am DoubleNestedModuleFun function";
+            end
+        end
     end
 end
 
