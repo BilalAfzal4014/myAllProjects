@@ -29,7 +29,7 @@ EXPOSE 80
 #directory system is apacheTest -> dockerProjects -> project1 
 
 #general explanation is
-# #sudo docker build -f [to reach to docker file] -t hello-bilal [to react to parent directory of the directory which we want to copy]
+# #sudo docker build -f [to reach to docker file] -t hello-bilal [to reach to parent directory of the directory which we want to copy]
 
 
 # to mount our local directory so we can see change
