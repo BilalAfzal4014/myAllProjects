@@ -1,0 +1,29 @@
+FROM node:10-alpine
+
+COPY js-node-docker/ /var/www/html/nodeProject 
+
+
+RUN npm install -g nodemon
+
+
+#use 'RUN' before linux script, docker makes his own linux(ubuntu) system and have its own directories and this cd will be of the docker system.
+#RUN cd /var/www/html/nodeProject
+
+
+#change the working directory for that docker container
+WORKDIR /var/www/html/nodeProject
+
+EXPOSE 3000
+
+
+#if we haven't change our working directory then just below command will also work
+#CMD [ "node", "/var/www/html/nodeProject/main.js" ]
+#CMD [ "node", "main.js" ] # this command will run when the we run that image (when container will get up)
+ 
+ 
+ 
+CMD [ "nodemon", "main.js" ]
+ 
+#RUN node main.js #this command will run when we build the image
+
+

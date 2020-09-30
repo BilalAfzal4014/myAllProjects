@@ -1,0 +1,14 @@
+FROM node:10-alpine
+
+COPY user-service/ /var/www/html/nodeProject 
+
+RUN npm install -g nodemon
+
+WORKDIR /var/www/html/nodeProject
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD [ "nodemon", "server.js" ]
+
