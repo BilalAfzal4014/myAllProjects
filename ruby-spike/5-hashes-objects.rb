@@ -5,7 +5,8 @@ hash = {
 };
 
 hash["newKey"] = ["111"];
-
+arr = [hash];
+puts arr.inspect;
 puts hash[:name]; #access without string key
 puts hash["new york"]; #access with string key
 puts hash["gender"];
