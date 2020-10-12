@@ -1,0 +1,38 @@
+<% content_for :content1 do %>
+  <table>
+    <thead>
+    <tr>
+      <td>
+        name
+      </td>
+      <td>
+        email
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    </thead>
+    <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= user["name"] %>
+        </td>
+        <td>
+          <%= user.email %>
+        </td>
+        <td>
+          <% if (session[:user_id]["role"] === "Employee" and session[:user_id]["id"] == user.id) || session[:user_id]["role"] === "Employeer" %>
+            <a href="<%= '/user/update/' + user.id.to_s %>">Edit</a>
+          <% else %>
+            <span>!edit</span>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<%= render template: "layouts/dashboard" %>

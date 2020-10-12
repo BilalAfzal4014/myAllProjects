@@ -1,0 +1,1 @@
+Role.create([{ name: 'Employeer' }, { name: 'Employee' }]);

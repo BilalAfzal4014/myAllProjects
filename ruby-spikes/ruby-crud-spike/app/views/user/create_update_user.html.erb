@@ -1,0 +1,52 @@
+<% content_for :content1 do %>
+  <form method="post" action="<%= @mode["action"] %>">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input hidden name="mode" value="<%= session[:user_info]["id"] %>"/>
+    <div>
+      <label>Enter Name:</label>
+      <input name="name" type="text" placeholder="name" value="<%= session[:user_info]["name"] %>"/>
+      <span style="color: red"><%= session[:error]["name"] %></span>
+    </div>
+    <div>
+      <label>Enter Email:</label>
+      <input name="email" type="text" placeholder="email" value="<%= session[:user_info]["email"] %>"/>
+      <span style="color: red"><%= session[:error]["email"] %></span>
+    </div>
+    <div>
+      <label>Enter Password:</label>
+      <input name="password" type="password" placeholder="password" value=""/>
+      <span style="color: red"><%= session[:error]["password"] %></span>
+    </div>
+    <div>
+      <label>Select Role:</label>
+      <select name="role"
+              <% if session[:user_id]["role"] === "Employee" || (session[:user_id]["role"] === "Employeer" and session[:user_id]["id"] == session[:user_info]["id"])%>
+              disabled
+              <% end %>
+              >
+        <option value="-1"
+                <% if session[:user_info]["role"] == -1 %>
+                selected="true"
+                <% end %>
+                >select
+        </option>
+        <% @roles.each do |role| %>
+          <option value="<%= role.id %>"
+                  <% if session[:user_info]["role"] == role.id %>
+                  selected="true"
+                  <% end %>
+                  >
+            <%= role.name %>
+          </option>
+        <% end %>
+      </select>
+      <span style="color: red"><%= session[:error]["role"] %></span>
+    </div>
+    <div>
+      <input type="submit" value="<%= @mode["actionBtnText"] %>"/>
+    </div>
+  </form>
+<% end %>
+
+<%= render template: "layouts/dashboard" %>
+

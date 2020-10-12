@@ -1,0 +1,2 @@
+module LoginController::LoginHelper
+end

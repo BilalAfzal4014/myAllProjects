@@ -1,0 +1,17 @@
+<div>
+  <div style="float: left; margin-right: 15px">
+    <% if session[:user_id]["permissions"].key?("create-user") %>
+      <a href="/user/create">Create User</a>
+    <% end %>
+    <a href="/user/all">All Users</a>
+  </div>
+  <div>
+    <button id="logout-btn" onclick="logoutMe()">logout</button>
+  </div>
+</div>
+
+<script>
+    function logoutMe() {
+        window.location.href = "/user/logout";
+    }
+</script>

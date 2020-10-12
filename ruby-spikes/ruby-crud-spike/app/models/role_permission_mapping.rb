@@ -1,0 +1,2 @@
+class RolePermissionMapping < ApplicationRecord
+end
