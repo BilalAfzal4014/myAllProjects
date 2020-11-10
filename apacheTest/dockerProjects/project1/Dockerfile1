@@ -44,4 +44,4 @@ EXPOSE 80
 #sudo docker run -p 81:3306 -v /Downloads/data-docker/mysql-data:/var/lib/mysql --name mysql-container --network php-mysql my-sql
 #sudo docker exec -t -i [your-container-name] /bin/bash #to see the content of your image by using container command
 #sudo docker exec -t -i [your-container-name] sh #to see the content of your image by using container command
-#sudo docker -it [image-name] sh # to see the content of your image
+#sudo docker run -it [image-name] sh # to see the content of your image
