@@ -49,13 +49,19 @@ test("test mock implementation of a simple function", function () {
     // to create a copy of a function
     let mockConcat = jest.fn(someFunctions.concat);
 
+    /*someFunctions.concat = jest.fn(someFunctions.concat);
+    someFunctions.concat.mockImplementation((a, b) => {
+        console.log(`The passed parameters are ${a} ${b}`);
+        return `${a} ${b}`;
+    })*/
+
     //to override its implementation
     mockConcat.mockImplementation((a, b) => {
         console.log(`The passed parameters are ${a} ${b}`);
         return `${a} ${b}`;
     })
 
-    //console.log("mockConcat1", someFunctions.concat('Bilal', 'Afzal')); // will call the original function
+    console.log("mockConcat1", someFunctions.concat('Bilal', 'Afzal')); // will call the original function
     console.log("mockConcat2", mockConcat('Bilal', 'Afzal'));
     expect(mockConcat('Bilal', 'Afzal')).toBe("Bilal Afzal");
 });
@@ -63,7 +69,8 @@ test("test mock implementation of a simple function", function () {
 
 test("test mock implementation of a simple inner function from a different file with spyOn", function () {
 
-
+    //if someFunctions.concat is mocked in any above test, then below line will also called a mocked function
+    //console.log("mockConcat3", someFunctions.concat("A", "B"))
 
     let mockAppendGender = jest.spyOn(someFunctions2, "appendGender");
 
