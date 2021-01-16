@@ -83,3 +83,4 @@ test("test mock implementation of a simple inner function from a different file 
     mockAppendGender.mockRestore();
 });
 
+// see in documentation https://jestjs.io/docs/en/mock-functions
