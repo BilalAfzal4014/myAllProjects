@@ -14,6 +14,7 @@ jest.mock("../../functions/2-some-functions", () => {
     }
 });
 
+// preference will be given to module factory mock vs __mocks__ folder
 
 describe("mocking a module", function () {
 
