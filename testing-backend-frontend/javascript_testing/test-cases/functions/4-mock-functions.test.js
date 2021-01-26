@@ -70,7 +70,13 @@ test("test mock implementation of a simple function", function () {
 test("test mock implementation of a simple inner function from a different file with spyOn", function () {
 
     //if someFunctions.concat is mocked in any above test, then below line will also called a mocked function
-    //console.log("mockConcat3", someFunctions.concat("A", "B"))
+    //console.log("mockConcat3", someFunctions.concat("A", "B"));
+
+    //check if the parent function will call the child mocked function - true
+    //check if the mocked function will also be available on other file - false
+
+    //spyOn and mock a function and assign to that same function or different variable will be available only in the same file scope
+    // parent will only child mocked or spy function if child function is written in else where file from parent
 
     let mockAppendGender = jest.spyOn(someFunctions2, "appendGender");
 
@@ -84,3 +90,15 @@ test("test mock implementation of a simple inner function from a different file 
 });
 
 // see in documentation https://jestjs.io/docs/en/mock-functions
+
+
+/*
+function mocked with different variable will be on one test level only
+function mocked with the same variable i.e fun = jest.fn(fun) will be on the file level only
+
+A parent will call a mocked child function, if a child function is written in different file
+
+
+describe blocks run sequential, but all the tests in the inside a describe block run parallel
+
+*/

@@ -22,6 +22,14 @@ const asyncApi = () => {
 
 };
 
+const asyncApiCallback = (cb) => {
+
+    setTimeout(() => {
+        cb([1, 2, 3]);
+    }, 6000)
+
+};
+
 const arrangeTheName = (firstName, lastName) => {
     let arrange = `${firstName} ${lastName}`;
     arrange = someFunctions2.appendGender(arrange, "Male");
@@ -36,11 +44,13 @@ const sumAndDivide = (num1, num2, num3) => {
     return divide;
 };
 
+
 module.exports = {
     sum,
     concat,
     getPerson,
     asyncApi,
     arrangeTheName,
-    sumAndDivide
+    sumAndDivide,
+    asyncApiCallback
 };
