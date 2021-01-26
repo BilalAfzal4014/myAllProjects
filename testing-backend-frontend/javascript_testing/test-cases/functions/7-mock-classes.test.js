@@ -14,6 +14,19 @@ jest.mock("../../functions/5-some-class", () => {
 });
 */
 
+//OR
+
+
+/*const mockPlaySoundFile = jest.fn().mockImplementation(function () {
+    return "mocking method factory mock 1.1";
+});
+jest.mock("../../functions/5-some-class", () => {
+    return jest.fn().mockImplementation(function(){
+        this.playSoundFile = mockPlaySoundFile
+    });
+});*/
+
+
 
 //If the class is not the default export from the module then you need to return an object with the key that is the same as the class export name.
 
