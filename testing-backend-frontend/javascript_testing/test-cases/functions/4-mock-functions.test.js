@@ -96,9 +96,9 @@ test("test mock implementation of a simple inner function from a different file 
 function mocked with different variable will be on one test level only
 function mocked with the same variable i.e fun = jest.fn(fun) will be on the file level only
 
-A parent will call a mocked child function, if a child function is written in different file
+A parent will call a mocked child function, if a child function is written in a different file
 
 
-describe blocks run sequential, but all the tests in the inside a describe block run parallel
+describe blocks run sequential, but all the tests inside a describe block run parallel
 
 */
