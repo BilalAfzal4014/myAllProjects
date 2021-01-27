@@ -55,3 +55,11 @@ test("4-mock-class 1", function () {
     console.log("result", obj1.playSomethingCool());
 
 });
+
+/*
+run your tests in sequence
+
+https://stackoverflow.com/questions/47291189/is-there-a-way-to-run-some-tests-sequentially-with-jest
+https://stackoverflow.com/questions/32751695/how-to-run-jest-tests-sequentially
+
+ */
