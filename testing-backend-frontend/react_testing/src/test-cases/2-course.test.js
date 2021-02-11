@@ -1,7 +1,7 @@
 import {render, screen, waitFor, findByText, fireEvent, cleanup} from '@testing-library/react';
 import Course from "../components/auth-components/course/course";
 import Name from "../components/auth-components/name/name";
-import React from "react";
+//import React from "react";
 
 //import {getCourses} from "../components/auth-components/course/course-api";
 jest.mock("../components/auth-components/course/course-api");
