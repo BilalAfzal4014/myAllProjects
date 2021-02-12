@@ -73,7 +73,7 @@ test("test mock implementation of a simple inner function from a different file 
     //if someFunctions.concat is mocked in any above test, then below line will also called a mocked function
     //console.log("mockConcat3", someFunctions.concat("A", "B"));
 
-    //check if the parent function will call the child mocked function - true
+    //check if the parent function will call the child mocked function(if child is in different file and mocked with same variable) - true
     //check if the mocked function will also be available on other file - false
 
     //spyOn and mock a function and assign to that same function or different variable will be available only in the same file scope
