@@ -1,5 +1,6 @@
 const someFunctions = require("../../functions/1-some-functions");
 const someFunctions2 = require("../../functions/2-some-functions");
+const someFunctions3 = require("../../functions/3-some-functions");
 
 test("test mocking of a callback function", function () {
 
@@ -76,7 +77,7 @@ test("test mock implementation of a simple inner function from a different file 
     //check if the mocked function will also be available on other file - false
 
     //spyOn and mock a function and assign to that same function or different variable will be available only in the same file scope
-    // parent will only child mocked or spy function if child function is written in else where file from parent
+    // parent will only call a child mocked or spy function if child function is written in different file from parent function file
 
     let mockAppendGender = jest.spyOn(someFunctions2, "appendGender");
 
@@ -88,6 +89,15 @@ test("test mock implementation of a simple inner function from a different file 
 
     mockAppendGender.mockRestore();
 });
+
+
+test("mock a child function (which is in different file) with different variable and parent will not call it", function () {
+    let divide = jest.fn(someFunctions3.divide).mockImplementation(function (num1, num2) {
+        return 1;
+    });
+
+    console.log("someFunctions.sumAndDivide", someFunctions.sumAndDivide(3, 3, 2)); // it will return 3, parent call the original child function
+})
 
 // see in documentation https://jestjs.io/docs/en/mock-functions
 
