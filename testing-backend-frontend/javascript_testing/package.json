@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "start": "nodemon server.js",
-    "start_and_test": "nodemon server.js & jest"
+    "start_and_test": "nodemon server.js & jest",
+    "setting_env_1": "NODE_ENV=production REACT_APP_ENV=QA node --max-old-space-size=2048 server.js",
+    "setting_env_2": "NODE_ENV=production REACT_APP_ENV=QA node server.js --max-old-space-size=2048"
   },
   "author": "MIT",
   "license": "MIT",
