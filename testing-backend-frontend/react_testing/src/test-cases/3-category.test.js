@@ -40,7 +40,7 @@ function renderComponentWithRedux(Component) {
             sampleReducer: categoryReducer //name of the reducer property should be same
         }),
     );
-
+furniture
     return {
         ...render(
             <Provider store={store}>
