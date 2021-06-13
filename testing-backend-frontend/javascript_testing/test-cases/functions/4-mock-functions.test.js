@@ -96,6 +96,12 @@ test("mock a child function (which is in different file) with different variable
         return 1;
     });
 
+    /*
+    in this parent will call the mocked child function which is in different file
+    let someFunctions3.divide = jest.fn(someFunctions3.divide).mockImplementation(function (num1, num2) {
+        return 1;
+    });*/
+
     console.log("someFunctions.sumAndDivide", someFunctions.sumAndDivide(3, 3, 2)); // it will return 3, parent call the original child function
 })
 
