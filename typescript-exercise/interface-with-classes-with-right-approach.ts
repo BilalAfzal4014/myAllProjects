@@ -11,9 +11,9 @@ interface ChildInterface extends ParentInterface {
 };
 
 class Employee implements ParentInterface {
-    name;
-    age;
-    gender;
+    name: string; // need to assign type here as well, cz value of another type can be assigned apart from constructor
+    age: number;
+    gender: 'Male' | 'Female';
 
     constructor(name: string, age: number, gender: 'Male' | 'Female' = null) {
         this.name = name;
@@ -27,8 +27,8 @@ const emp1 = new Employee("Bilal", 30, "Male");
 console.log(emp1);
 
 class Manager extends Employee implements ChildInterface {
-    privileges;
-    description;
+    privileges: Array<string>;
+    description: string;
 
     constructor(name: string, age: number, privileges: Array<string>, description: string) {
         super(name, age);
