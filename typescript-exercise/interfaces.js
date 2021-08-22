@@ -29,3 +29,18 @@ var dynamicInterfaceWithNumberParam = {
     justAProp: 1
 };
 console.log(dynamicInterfaceWithNumberParam);
+var interfaceFunctionDeclaration = function (age, name) {
+    console.log(age);
+    console.log(name);
+};
+//interfaceFunctionDeclaration("30", "Bilal"); // this will produce error
+interfaceFunctionDeclaration(30, "Bilal");
+var numArr = [1, 2, 3];
+console.log(numArr);
+var strArr = {};
+strArr.TS = "TypeScript";
+strArr["JS"] = "JavaScript";
+console.log(strArr);
+var personObj = { SSN: 110555444, name: 'James Bond' };
+personObj.name = 'Steve Smith'; // OK
+//personObj.SSN = '333666888'; // Compiler Error
