@@ -17,3 +17,15 @@ studentsWithCourses = [{
             }]
     }];
 console.log(studentsWithCourses);
+var dynamicInterfaceWithDefaultParam = {
+    justAProp: "can-be-any-type"
+};
+console.log(dynamicInterfaceWithDefaultParam);
+var dynamicInterfaceWithStringParam = {
+    justAProp: "string-type"
+};
+console.log(dynamicInterfaceWithStringParam);
+var dynamicInterfaceWithNumberParam = {
+    justAProp: 1
+};
+console.log(dynamicInterfaceWithNumberParam);

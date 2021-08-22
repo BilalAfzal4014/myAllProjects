@@ -31,3 +31,22 @@ studentsWithCourses = [{
 }];
 
 console.log(studentsWithCourses);
+
+interface DynamicInterface<param = any>{
+    justAProp: param;
+}
+
+const dynamicInterfaceWithDefaultParam: DynamicInterface = {
+    justAProp: "can-be-any-type"
+}
+console.log(dynamicInterfaceWithDefaultParam);
+
+const dynamicInterfaceWithStringParam: DynamicInterface<string> = {
+    justAProp: "string-type"
+};
+console.log(dynamicInterfaceWithStringParam);
+
+const dynamicInterfaceWithNumberParam: DynamicInterface<number> = {
+    justAProp: 1
+};
+console.log(dynamicInterfaceWithNumberParam);
