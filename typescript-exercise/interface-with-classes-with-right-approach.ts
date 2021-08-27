@@ -1,5 +1,5 @@
 interface ParentInterface {
-    name: string;
+    readonly name: string;
     age: number;
     gender?: 'Male' | 'Female'
 };
@@ -11,7 +11,7 @@ interface ChildInterface extends ParentInterface {
 };
 
 class Employee implements ParentInterface {
-    name: string; // need to assign type here as well, cz value of another type can be assigned apart from constructor
+    readonly name: string; // need to assign type here as well, cz value of another type can be assigned apart from constructor
     age: number;
     gender: 'Male' | 'Female';
 
