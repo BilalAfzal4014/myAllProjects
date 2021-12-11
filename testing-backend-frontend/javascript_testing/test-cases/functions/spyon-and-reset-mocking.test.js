@@ -1,0 +1,44 @@
+//const parentModuleObject = require("../../functions/parent-functions");
+const {parent} = require("../../functions/parent-functions");
+const childModuleObject = require("../../functions/child-functions");
+// we need to import as an object not like above to make spy and jest.fn().mockImplementation to work on to work here
+//const {child} = require("../../functions/child-functions");
+
+beforeEach(() => {
+    jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
+    jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
+    jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
+});
+
+test("Spy a child function", () => {
+    let mockedChildFunction = jest.spyOn(childModuleObject, "child");
+    mockedChildFunction.mockReturnValue("Mocked child function");
+
+    console.log(parent());
+});
+
+
+test("Is above spyed function available here as well, yes it is", () => {
+    console.log(parent());
+});
+
+
+//if we add describe block and its every combination, the condition will still be the same for both sypedon and jest.fn().mockImplementation case
+
+
+test("mock a function with jest.fn", () => {
+    childModuleObject.child = jest.fn().mockImplementation(() => {
+        return "Mocked child function"
+    });
+
+    console.log(parent());
+    expect(childModuleObject.child).toBeCalledTimes(1);
+});
+
+test("check if mocked gets unmocked, nope / check if function called times reset, yes", () => {
+    console.log(parent()); //comment this line and see the results for check if function called times reset, yes the function will not be called and value will be zero instead of 1
+    expect(childModuleObject.child).toBeCalledTimes(1);
+});
+
+
+//spyedon require to import as an object to mock to work and so does jest.fn().mockImplementation
