@@ -23,8 +23,7 @@ test("Is above spyed function available here as well, yes it is", () => {
 });
 
 
-//if we add describe block and its every combination, the condition will still be the same for both sypedon and jest.fn().mockImplementation case
-
+//if we add describe block and its every combination and placed test cases inside them, the condition [un-mocking] will still be the same for both sypedon and jest.fn().mockImplementation case
 
 test("mock a function with jest.fn", () => {
     childModuleObject.child = jest.fn().mockImplementation(() => {
@@ -42,3 +41,69 @@ test("check if mocked gets unmocked, nope / check if function called times reset
 
 
 //spyedon require to import as an object to mock to work and so does jest.fn().mockImplementation
+
+
+
+////////////
+/*
+
+
+describe('1', function(){
+    beforeEach(() => {
+        jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
+        jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
+        jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
+    });
+
+    test("Spy a child function", () => {
+        let mockedChildFunction = jest.spyOn(childModuleObject, "child");
+        mockedChildFunction.mockReturnValue("Mocked child function");
+
+        console.log(parent()); //mocked will called
+    });
+});
+
+
+
+test("Is above spyed function available here as well, yes it is", () => {
+    console.log(parent()); mocked will called
+});
+
+
+*/
+///////////
+
+
+
+////////////
+/*
+
+
+describe('1', function(){
+    beforeEach(() => {
+        jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
+        jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
+        jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
+    });
+
+    test("Spy a child function", () => {
+        let mockedChildFunction = jest.spyOn(childModuleObject, "child");
+        mockedChildFunction.mockReturnValue("Mocked child function");
+
+        console.log(parent()); //mocked will called
+    });
+
+    test("Is above spyed function available here as well, yes it is 1", () => {
+        console.log(parent()); original will called
+    });
+});
+
+
+
+test("Is above spyed function available here as well, yes it is 2", () => {
+    console.log(parent()); original will called
+});
+
+
+*/
+///////////
