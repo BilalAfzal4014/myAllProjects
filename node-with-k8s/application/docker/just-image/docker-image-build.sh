@@ -1,0 +1,1 @@
+docker build -f ./Dockerfile -t node-with-k8s-image ../../

@@ -1,0 +1,20 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod-1
+spec:
+  containers:
+    - name: node-with-k8s-container
+      image: node-with-k8s-image
+      imagePullPolicy: Never
+      command: ["nodemon", "server.js"]
+      ports:
+        - containerPort: 3000
+      volumeMounts:
+        - mountPath: /tmp/anotherHostPath/
+          name: testvolume
+  volumes:
+    - name: testvolume
+      hostPath:
+        #path: /Users/bilalafzal/Documents/projects/myAllProjects/node-with-k8s/application
+        path: /tmp/data/

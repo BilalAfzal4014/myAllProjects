@@ -1,0 +1,75 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: node-app-deployment
+  labels:
+    app: node-deployment
+spec:
+  replicas: 2 #pod replica
+  selector:
+    matchLabels:
+      app: node-deployment
+  template:
+    metadata:
+      labels:
+        name: testpod
+        app: node-deployment
+    spec:    
+      initContainers: #this container will get created with every pod
+        - name: pre-req-tester
+          image: busybox:1.31
+          command: [ 'sh', '-c', 'echo -e "Checking for the availability of MySQL Server deployment"; while ! nc -z mysql-service 3306; do sleep 1; printf "-"; done; echo -e "  >> MySQL DB Server has started";' ]
+      containers:
+        - name: node-with-k8s-container
+          image: node-with-k8s-image
+          imagePullPolicy: Never
+          command: ["nodemon", "server.js", "--watch '**/*'"]
+          ports:
+            - containerPort: 3000
+          env:
+            - name: "db_host"
+              valueFrom:
+                configMapKeyRef:
+                  name: mysql-config
+                  key: mysql-host
+            - name: "db_user"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-user
+            - name: "db_password"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-password
+            - name: "db_name"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-db
+            - name: "db_port"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-port
+          volumeMounts:
+            - mountPath: /usr/src/app
+              name: testvolume
+      volumes:
+        - name: testvolume
+          hostPath:
+            path: /Users/bilalafzal/Documents/projects/myAllProjects/node-with-k8s/application
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-service
+spec:
+  type: NodePort # by default, it is ClusterIP
+  selector:
+    app: node-deployment
+  ports:
+    - protocol: TCP
+      port: 3001   #service port
+      targetPort: 3000 #container or pod port as we know container port is unique on pod level and gets automatically assigned to pod
+      nodePort: 30100 # should be unique on cluster level
