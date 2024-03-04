@@ -6,7 +6,7 @@ const childModuleObject = require("../../functions/child-functions");
 
 beforeEach(() => {
     jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
-    jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
+    jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only, on mocked function there will still be mocked and not effect
     jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
 });
 
