@@ -1,5 +1,5 @@
 function child(){
-    return "child";
+    return "mock child function";
 }
 
 module.exports = {

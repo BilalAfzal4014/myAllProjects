@@ -4,6 +4,8 @@ const childModuleObject = require("../../functions/child-functions");
 // we need to import as an object not like above to make spy and jest.fn().mockImplementation to work on to work here
 //let {child} = require("../../functions/child-functions");
 
+//jest.mock("../../functions/child-functions"); // in module mocking always will be the mockded function called not matter how we import child function in parent function file
+
 beforeEach(() => {
     jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
     jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only, on mocked function there will still be mocked and not effect
@@ -25,7 +27,7 @@ beforeEach(() => {
 
 //if we add describe block and its every combination and placed test cases inside them, the condition [un-mocking] will still be the same for both sypedon and jest.fn().mockImplementation case
 
-test("mock a function with jest.fn", () => {
+/*test("mock a function with jest.fn", () => {
     childModuleObject.child = jest.fn().mockImplementation(() => {
         return "Mocked child function"
     });
@@ -33,12 +35,18 @@ test("mock a function with jest.fn", () => {
     console.log(parent());
     //expect(true).toBeTruthy();
     expect(childModuleObject.child).toBeCalledTimes(1);
+});*/
+
+test("mock a function with jest.mock (module mock) and see if destructuring import works ?", () => {
+    console.log(parent());
+    expect(true).toBeTruthy(); // always will be the mockded function called not matter how we import child function in parent function file
 });
 
-test("check if mocked gets unmocked, nope / check if function called times reset, yes", () => {
+
+/*test("check if mocked gets unmocked, nope / check if function called times reset, yes", () => {
     console.log(parent()); //comment this line and see the results for check if function called times reset, yes the function will not be called and value will be zero instead of 1
     expect(childModuleObject.child).toBeCalledTimes(1);
-});
+});*/
 
 
 //spyedon require to import as an object to mock to work and so does jest.fn().mockImplementation
