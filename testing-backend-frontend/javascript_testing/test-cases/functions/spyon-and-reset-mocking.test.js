@@ -6,11 +6,11 @@ const childModuleObject = require("../../functions/child-functions");
 
 //jest.mock("../../functions/child-functions"); // in module mocking always will be the mockded function called not matter how we import child function in parent function file
 
-beforeEach(() => {
-    jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
-    jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only, on mocked function there will still be mocked and not effect
-    jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
-});
+// beforeEach(() => {
+//     jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
+//     jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only, on mocked function there will still be mocked and not effect
+//     jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
+// });
 
 // test("Spy a child function", () => {
 //     let mockedChildFunction = jest.spyOn(childModuleObject, "child");
@@ -37,10 +37,10 @@ beforeEach(() => {
     expect(childModuleObject.child).toBeCalledTimes(1);
 });*/
 
-test("mock a function with jest.mock (module mock) and see if destructuring import works ?", () => {
-    console.log(parent());
-    expect(true).toBeTruthy(); // always will be the mockded function called not matter how we import child function in parent function file
-});
+// test("mock a function with jest.mock (module mock) and see if destructuring import works ?", () => {
+//     console.log(parent());
+//     expect(true).toBeTruthy(); // always will be the mockded function called not matter how we import child function in parent function file
+// });
 
 
 /*test("check if mocked gets unmocked, nope / check if function called times reset, yes", () => {
@@ -149,35 +149,35 @@ test("mock a function with jest.fn 2", () => {
 
 
 ////////////
-/*
-describe('1', function(){
 
-    beforeEach(() => {
-        jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
-        jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
-        jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
-    });
+// describe('1', function(){
+//
+//     beforeEach(() => {
+//         jest.resetAllMocks(); // reset mocks to uninitialized state i.e. undefined
+//         jest.restoreAllMocks(); // reset mocks to un-mocked state i.e. original function for spyon case only
+//         jest.clearAllMocks(); //to reset the count of called function to zero, remember the case in react where i was inputing on form and expecting api function to not to be called and to be called n times
+//     });
+//
+//     test("mock a function with jest.fn 1", () => { //once function mocked like that it will always stays mock for the whole test suite
+//         childModuleObject.child = jest.fn().mockImplementation(() => {
+//             return "Mocked child function"
+//         });
+//
+//         console.log(parent()); //mocked function
+//     });
+//
+//     test("mock a function with jest.fn 2", () => {
+//         console.log(parent()); //undefined from child function:: reason resetAllMocks have been called
+//     });
+//
+// });
+//
+//
+// test("mock a function with jest.fn 3", () => {
+//     console.log(parent()); //undefined function
+// });
 
-    test("mock a function with jest.fn 1", () => {
-        childModuleObject.child = jest.fn().mockImplementation(() => {
-            return "Mocked child function"
-        });
 
-        console.log(parent()); //mocked function
-    });
-
-    test("mock a function with jest.fn 2", () => {
-        console.log(parent()); //original function
-    });
-
-});
-
-
-test("mock a function with jest.fn 3", () => {
-    console.log(parent()); //original function
-});
-
-*/
 ///////////
 
 

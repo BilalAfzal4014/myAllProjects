@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+<entity name="App\Application\Sonata\UserBundle\Entity\User" table="fos_user_user"
+        repository-class="Application\Sonata\UserBundle\Repository\UserRepository">
+
+    <id name="id" column="id" type="integer">
+        <generator strategy="AUTO" />
+    </id>
+
+    <many-to-one field="parentUser" target-entity="App\Application\Sonata\UserBundle\Entity\User" orphan-removal="" inversed-by="fosUser">
+        <join-columns>
+            <join-column name="parent_id" referenced-column-name="id" nullable="1"/>
+        </join-columns>
+    </many-to-one>
+
+
+    <many-to-one field="appVersion" target-entity="App\Entity\AppVersion" orphan-removal="" inversed-by="user">
+        <cascade>
+            <cascade-persist/>
+        </cascade>
+    </many-to-one>
+
+
+    <field name="address" type="string" column="address" length="100" nullable="true"/>
+    <field name="isGDPR" type="boolean" column="is_gdpr" length="1" nullable="true"/>
+    <field name="addressOne" type="string" column="address_one" length="100" nullable="true"/>
+    <field name="addressTwo" type="string" column="address_two" length="100" nullable="true"/>
+    <field name="PoBox" type="string" column="po_box" length="50" nullable="true"/>
+    <field name="city" type="string" column="city" length="50" nullable="true"/>
+    <field name="country" type="string" column="country" length="50" nullable="true"/>
+    <field name="contactTitle" type="string" column="contact_title" length="100" nullable="true"/>
+    <field name="contactFirstname" type="string" column="contact_firstname" length="50" nullable="true"/>
+    <field name="contactLastname" type="string" column="contact_lastname" length="50" nullable="true"/>
+    <field name="designation" type="string" column="designation" length="50" nullable="true"/>
+    <field name="contactEmail" type="string" column="contact_email" length="50" nullable="true"/>
+    <field name="contactNo" type="string" column="contact_no" length="100" nullable="true"/>
+    <field name="contactUrl" type="string" column="contact_url" length="100" nullable="true"/>
+    <field name="contactNotes" type="string" column="notes" length="255" nullable="true"/>
+    <field name="companyLogo" type="string" column="company_logo" length="255" nullable="true"/>
+    <field name="companyName" type="string" column="company_name" length="100" nullable="true"/>
+    <field name="latitude" type="string" column="latitude" length="255" nullable="true"/>
+    <field name="longitude" type="string" column="longitude" length="255" nullable="true"/>
+    <field name="card" type="string" column="card_id" length="100" nullable="true"/>
+    <field name="notification" type="boolean" column="notification" nullable="true"/>
+    <field name="enableDiscount" type="boolean" column="enable_discount" nullable="true"/>
+    <field name="stepCount" type="integer" column="step_count" nullable="true"/>
+    <field name="distance" type="float" column="distance" nullable="true"/>
+    <field name="stepDateTime" type="datetime" column="step_date_time" nullable="true"/>
+    <field name="lastRewardSteps" type="integer" column="last_reward_steps" nullable="true"/>
+
+    <one-to-many field="fosUser" target-entity="App\Application\Sonata\UserBundle\Entity\User" mapped-by="parentUser" />
+    <one-to-many field="corporateKey" target-entity="App\Entity\CorporateKey" mapped-by="corporate" />
+    <one-to-many field="corporateDepartment" target-entity="App\Entity\CorporateDepartment" mapped-by="corporateUser" />
+    <one-to-many field="corporateMember" target-entity="App\Entity\MemberKey" mapped-by="member" />
+    <one-to-many field="memberDeviceToken" target-entity="App\Entity\MemberDeviceToken" mapped-by="user" />
+    <one-to-many field="companyId" target-entity="App\Entity\ProfileKey" mapped-by="companyId" />
+    <one-to-many field="memberMeasurement" target-entity="App\Entity\MemberMeasurement" mapped-by="user" />
+    <one-to-many field="facilityActivity" target-entity="App\Entity\FacilityActivity" mapped-by="facility" />
+    <one-to-many field="article" target-entity="App\Entity\Article" mapped-by="user" />
+    <!--<one-to-many field="member" target-entity="App\Entity\Article" mapped-by="favouriteArticle" />-->
+    <one-to-many field="package" target-entity="App\Entity\Package" mapped-by="facility" />
+    <one-to-many field="activitySchedule" target-entity="App\Entity\ActivitySchedule" mapped-by="instructor" />
+    <one-to-many field="activitySchedulefacility" target-entity="App\Entity\ActivitySchedule" mapped-by="facility" />
+    <one-to-many field="amenity" target-entity="App\Entity\FacilityAmenity" mapped-by="facility" />
+    <one-to-many field="workout" target-entity="App\Entity\Workout" mapped-by="user" />
+    <one-to-many field="memberWorkout" target-entity="App\Entity\MemberWorkout" mapped-by="member" />
+    <one-to-many field="exercise" target-entity="App\Entity\Exercise" mapped-by="user" />
+    <one-to-many field="memberSchedule" target-entity="App\Entity\MemberScheduleActivity" mapped-by="member" />
+    <one-to-many field="facilityGallery" target-entity="App\Entity\FacilityGallery" mapped-by="facility" />
+    <one-to-many field="facilityPackage" target-entity="App\Entity\FacilityPackage" mapped-by="facility" />
+    <one-to-many field="memberPackage" target-entity="App\Entity\MemberPackage" mapped-by="member" />
+    <one-to-many field="userDocument" target-entity="App\Entity\UserDocuments" mapped-by="user" />
+    <one-to-many field="UserBankInfo" target-entity="App\Entity\UserBankInfo" mapped-by="user" />
+    <one-to-many field="memberBillingHistory" target-entity="App\Entity\MemberBillingHistory" mapped-by="user" />
+    <one-to-many field="deviceconfig" target-entity="App\Entity\DeviceConfig" mapped-by="user" />
+    <one-to-many target-entity="App\Gamification\Bundle\Entity\MemberChallenge" mapped-by="member" field="challanges" />
+    <one-to-many field="memberAction" target-entity="App\Entity\MemberAction" mapped-by="user" />
+    <one-to-many target-entity="App\Entity\CorporateMemberEmail" mapped-by="member" field="corporateMemberEmail" />
+    <one-to-many target-entity="App\Entity\CorporateMemberEmail" mapped-by="corporate" field="corporateEmail" />
+</entity>
+
+</doctrine-mapping>

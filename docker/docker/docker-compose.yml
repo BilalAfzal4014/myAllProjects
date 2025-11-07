@@ -1,0 +1,87 @@
+version: '3'
+services:
+
+#Database
+  mysql:
+    image: mysql:5.7.22
+    container_name: coredirection-database
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: eureka123
+      MYSQL_DATABASE: coredirection
+      MYSQL_USER: root
+      MYSQL_PASSWORD: eureka123
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image:  phpmyadmin/phpmyadmin
+    container_name: coredirection-phpmyadmin
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+    ports:
+      - 8001:80
+    environment:
+      - PMA_ARBITRARY=1
+      - MYSQL_USER= root
+      - MYSQL_PASSWORD=eureka123
+      - MYSQL_ROOT_PASSWORD=eureka123
+
+  php:
+
+#    image: php:7.4-fpm-alpine
+    build:
+      context: .
+      dockerfile: ./php-fpm/Dockerfile
+    volumes:
+      - ../coredirection:/var/www/coredirection
+      - ./php-fpm/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - app-network
+
+#ngnix server
+  web:
+    image: nginx:latest
+
+    ports:
+      - "8888:80"
+    volumes:
+      - ../coredirection:/var/www/coredirection
+      - ./nginx/coredirection.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  node:
+    image: "node:10"
+    user: "node"
+    working_dir: /var/www/service
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../services:/var/www/service
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    command: "npm start"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local
