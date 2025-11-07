@@ -1,0 +1,50 @@
+[
+  {
+    "name": "customer",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "payment_method",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

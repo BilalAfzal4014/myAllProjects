@@ -1,0 +1,15 @@
+module.exports = Object.freeze({
+    BOOKING_SUCCESSFULL: "Booking has been Successfull",
+    BOOKING_VALIDATION: "Book Activity validation failed",
+    NO_BOOKING_PACKAGE: "you have no active package for booking",
+    NO_SLOT_AVAILABLE: "There is no slot available for booking",
+    CLASS_BOOKED: "Class already booked",
+    PACKAGE_ID_REQUIRED: "package id is required",
+    NO_FREE_PACKAGE: "no free package available for this booking",
+    ROLL_BACK_TRANS: "Transaction is rolled back",
+    F_NAME_RE: "First name is required",
+    L_NAME_RE: "Last name is required",
+    EMAIL_RE: "Email is required",
+    BOOKING_NOT_FOUND: "No Booking found",
+    BOOKING_CANCELLED: "Activity booking has been cancelled",
+});

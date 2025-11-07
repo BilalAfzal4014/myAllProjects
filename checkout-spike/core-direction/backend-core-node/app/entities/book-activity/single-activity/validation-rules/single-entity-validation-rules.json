@@ -1,0 +1,109 @@
+[
+  {
+    "name": "user_id",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "first_name",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "last_name",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "email",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "EMAIL"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "member_package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "schedule_detail_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "type",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": [
+      "ForMe",
+      "ForFriend",
+      "ForUnder18"
+    ],
+    "unique": false
+  }
+]

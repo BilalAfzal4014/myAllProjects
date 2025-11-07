@@ -1,0 +1,25 @@
+FROM node:19
+
+RUN npm install -g nodemon
+
+WORKDIR /usr/src/app
+
+COPY ../../../../ .
+
+ENV DB_CLIENT=mysql2
+ENV DB_HOST=mysql-container
+ENV DB_NAME=my_database
+ENV DB_USER=my_user
+ENV DB_PASSWORD=my_user_password
+ENV conflict=dockerWaliOverridehueHai
+
+
+CMD ["npm", "run", "dev"]
+
+#CMD ["nodemon", "src/server.js"]
+
+
+#CMD ["sh", "-c", "npm run migrate:all && npm run seed:run && npm run dev"]
+
+
+#CMD ["sh", "-c", "npm run migrate:all && [ ! -f /usr/src/app/.seeded ] && npm run seed:run && touch /usr/src/app/.seeded && npm run dev"]

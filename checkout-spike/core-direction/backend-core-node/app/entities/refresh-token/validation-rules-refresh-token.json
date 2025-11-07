@@ -1,0 +1,15 @@
+[
+  {
+    "name": "refresh_token",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "match_with_name": "refresh_token",
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

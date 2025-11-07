@@ -1,0 +1,111 @@
+[
+  {
+    "name": "email",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "match_with_name": "email",
+        "dataType": "EMAIL"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": true
+  },
+  {
+    "name": "password",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "phone_number",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "first_name",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "last_name",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "date_of_birth",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "DATE"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "gender",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": ["m", "f", "o"],
+    "unique": false
+  },
+  {
+    "name": "country",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "profile_image",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "BASE64_ENCODED_IMAGE"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

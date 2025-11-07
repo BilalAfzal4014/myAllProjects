@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/v3-web-app
+hooks:
+  AfterInstall:
+    - location: scripts/build.sh
+      timeout: 300
+      runas: root

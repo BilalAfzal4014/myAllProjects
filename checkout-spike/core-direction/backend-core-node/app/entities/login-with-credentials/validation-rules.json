@@ -1,0 +1,27 @@
+[
+  {
+    "name": "email",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "match_with_name": "email",
+        "dataType": "EMAIL"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "password",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

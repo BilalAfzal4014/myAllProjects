@@ -1,0 +1,17 @@
+[
+  {
+    "name": "type",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": [
+      "CREDENTIALS",
+      "SOCIAL"
+    ],
+    "unique": false
+  }
+]

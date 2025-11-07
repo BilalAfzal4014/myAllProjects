@@ -1,0 +1,16 @@
+[
+  {
+    "name": "id",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "dataType": "ANY",
+        "match_with_name": "id"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]

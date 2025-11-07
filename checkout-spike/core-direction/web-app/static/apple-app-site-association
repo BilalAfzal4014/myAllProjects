@@ -1,0 +1,10 @@
+{
+	"applinks": {
+		"details": [{
+			"appIDs": ["7AAN2UXF77.com.core.health.track"],
+			"components": [{
+				"/": "/community/*",
+			}]
+		}]
+	}
+}

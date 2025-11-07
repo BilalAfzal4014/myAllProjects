@@ -1,0 +1,356 @@
+#community-challenges .section-body {
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  #community-challenges .section-body {
+    margin-top: 29px;
+  }
+}
+
+.section-body {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body {
+    margin-top: 20px;
+  }
+}
+
+.section-body .swiper-container {
+  overflow-x: hidden;
+  margin-right: -1rem;
+}
+
+@media screen and (min-width: 1300px) {
+  .section-body .swiper-container {
+    margin-right: -100px;
+    width: calc(100% + 100px);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section-body .swiper-container {
+    margin-right: -300px;
+    width: calc(100% + 300px);
+  }
+}
+
+@media (min-width: 1220px) and (max-width: 1920px) {
+  .section-body .swiper-container {
+    overflow-x: visible;
+  }
+}
+
+.section-body .swiper-pagination-bullet {
+  width: 10px;
+  height: 8px;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+  background: #757575;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.section-body .swiper-pagination-bullet-active {
+  width: 28px;
+  background: #690fad;
+}
+
+.section-body .card {
+  width: 340px;
+  height: 338px;
+}
+
+.card .card-body {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 22px 40px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body .card {
+    width: 290px;
+  }
+}
+
+.section-body .card .card-body {
+  height: 338px;
+}
+
+.section-body .card .card-body .carf-info-box {
+  height: 156px;
+}
+
+.section-body .sm-card {
+  width: 324px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body .sm-card {
+    width: 290px;
+  }
+}
+
+.section-body .friend-img-box {
+  width: 88px;
+  height: 88px;
+  border-radius: 171px;
+  -webkit-border-radius: 171px;
+  -moz-border-radius: 171px;
+  -ms-border-radius: 171px;
+  -o-border-radius: 171px;
+  overflow: hidden;
+}
+
+.section-body .friend-img-box img {
+  width: 88px;
+  height: 88px;
+}
+
+.section-body .our-partners-logo-box {
+  width: 112px;
+  height: 108.85px;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  overflow: hidden;
+}
+
+.section-body .our-partners-logo-box img {
+  width: 112px;
+  height: 108.85px;
+}
+
+.section-body .booking-card {
+  width: 361px;
+  margin-right: 30px;
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body .booking-card {
+    width: 305px;
+    margin-right: 15px;
+  }
+}
+
+.section-body .booking-card .booking-card-header {
+  padding-bottom: 18px;
+  margin-bottom: 15.51px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body .booking-card .booking-card-header {
+    padding-bottom: 21px;
+    margin-bottom: 9.5px;
+  }
+}
+
+.section-body .booking-history-card {
+  width: 332px;
+  margin-right: 18px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-body .booking-history-card {
+    width: 304px;
+    margin-right: 15px;
+  }
+}
+
+.custom-container {
+  width: 100%;
+  max-width: calc(1173px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-container {
+  overflow-x: hidden;
+}
+
+.challenge-card {
+  margin-right: 30px;
+  height: 323px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card {
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+#business-profile .challenge-box .challenge-card {
+  margin-right: 0;
+}
+
+.challenge-card .card-body {
+  height: 323px !important;
+}
+
+.challenge-card .gym-logo {
+  left: 18px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.challenge-card .card-info-box {
+  padding: 18px 18px 23px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card .card-info-box {
+    padding: 18px 16px 23px;
+  }
+}
+
+.challenge-card .challenge-info-list {
+  row-gap: 7px;
+}
+
+.challenge-card .challenge-info-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card .challenge-info-label {
+    font-size: 10px;
+    line-height: 12px;
+    margin-right: 2px;
+  }
+}
+
+.challenge-card .challenge-info-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card .challenge-info-value {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.challenge-card .challenge-info-unselected {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card .challenge-info-unselected {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.challenge-card .btn-view-challengers {
+  width: 42px;
+  height: 42px;
+  background-color: #690fad;
+}
+
+@media screen and (max-width: 767px) {
+  .challenge-card .btn-view-challengers {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.challenge-card .gym-logo {
+  left: 18px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card .card-body .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0 0 10px !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: -webkit-fill-available;
+}
+
+.challenge-card .card-info-box {
+  padding: 18px 18px 23px;
+}
+
+.card .card-body .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0 0 10px !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: -webkit-fill-available;
+}
+
+.challenge-card .challenge-info-list {
+  row-gap: 7px;
+}
+
+.challenge-card .challenge-info-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.challenge-card .challenge-info-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}

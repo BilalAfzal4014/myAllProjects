@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/backend-core-node
+hooks:
+  BeforeInstall:
+    - location: scripts/build-before.sh
+      timeout: 600
+      runas: root
+  AfterInstall:
+    - location: scripts/build-after.sh
+      timeout: 600
+      runas: root

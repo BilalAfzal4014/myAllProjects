@@ -1,0 +1,111 @@
+[
+  {
+    "name": "firstname",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "lastname",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "phone",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "email",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "EMAIL"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": true
+  },
+  {
+    "name": "date_of_birth",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "country",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "gender",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": ["m", "f", "o"],
+    "unique": false
+  },
+  {
+    "name": "user_emergency",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "OBJECT"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  },
+  {
+    "name": "id",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "match_with_name": "id",
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "save_card_tracking_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "member_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "last_four",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "payment_gateway_used",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": [
+      "stripe"
+    ],
+    "unique": false
+  },
+  {
+    "name": "modifiedby",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "NUMBER"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "card_holder_name",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "card_type",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "is_deleted",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "NUMBER"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]

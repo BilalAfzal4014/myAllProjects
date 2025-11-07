@@ -1,0 +1,42 @@
+[
+
+  {
+    "name": "user_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "schedule_detail_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "users",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ARRAY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]

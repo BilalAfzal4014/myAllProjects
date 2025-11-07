@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="<%= BASE_URL %>assets/images/fav.png" rel="shortcut icon" type="image/x-icon">
+    <title>Inspiring Movement | Core Direction</title>
+    <meta content="Inspiring Movement | Core Direction" name="title">
+    <meta content="A fitness, health & wellness company powered by technology committed to finding inspiring the world to move."
+          name="description">
+    <meta content="Core Direction, my.coredirection, inspiringmovement, challenges, wellness, corporate wellness, COREUNITY Festival"
+          name="keywords">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="English" name="language">
+    <meta content="Core Direction" name="author">
+
+
+    <link href="<%= BASE_URL %>assets/css/common.min.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="<%= BASE_URL %>assets/css/main.css" media="all" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Graph tags -->
+    <meta content="Inspiring Movement" property="og:title">
+    <meta content="Core Direction" property="og:site_name">
+    <meta content="https://coredirection.com" property="og:url">
+    <meta content="A fitness, health & wellness company powered by technology committed to finding inspiring the world to move."
+          property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://cdn.coredirection.com/cdn-cgi/image/quality=auto,width=1200,height=630,crop_gravity=center,format=auto/lp-content/assets/img/graph-image/coredirection.webp"
+          property="og:image">
+
+    <style>
+
+        input, select {
+            font-size: 100%;
+            -moz-appearance: none !important;
+            -webkit-appearance: none !important;
+            appearance: none !important;
+        }
+
+        .preloader {
+            position: fixed;
+            z-index: 999;
+            height: 25em;
+            width: 25em;
+            overflow: visible;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        /*** iPhone and iOS Form Input Zoom Fixes ***/
+        /* Fix Input Zoom on devices older than iPhone 5: */
+        @media screen and (device-aspect-ratio: 2/3) {
+            select, textarea, input[type="text"], input[type="password"],
+            input[type="datetime"], input[type="datetime-local"],
+            input[type="date"], input[type="month"], input[type="time"],
+            input[type="week"], input[type="number"], input[type="email"],
+            input[type="url"] {
+                font-size: 16px;
+            }
+        }
+
+        .cropper-crop-box {
+            overflow: hidden;
+            border-radius: 50% !important;
+        }
+
+        /* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+        @media screen and (device-aspect-ratio: 40/71) {
+            select, textarea, input[type="text"], input[type="password"],
+            input[type="datetime"], input[type="datetime-local"],
+            input[type="date"], input[type="month"], input[type="time"],
+            input[type="week"], input[type="number"], input[type="email"],
+            input[type="url"] {
+                font-size: 16px;
+            }
+        }
+
+        /* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+        @media screen and (device-aspect-ratio: 375/667) {
+            select, textarea, input[type="text"], input[type="password"],
+            input[type="datetime"], input[type="datetime-local"],
+            input[type="date"], input[type="month"], input[type="time"],
+            input[type="week"], input[type="number"], input[type="email"],
+            input[type="tel"], input[type="url"] {
+                font-size: 16px;
+            }
+        }
+
+        /* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+        @media screen and (device-aspect-ratio: 9/16) {
+            select, textarea, input[type="text"], input[type="password"],
+            input[type="datetime"], input[type="datetime-local"],
+            input[type="date"], input[type="month"], input[type="time"],
+            input[type="week"], input[type="number"], input[type="email"],
+            input[type="tel"], input[type="url"] {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body id="body">
+<noscript>
+    <strong>We’re sorry but this website doesn’t work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div id="app"></div>
+<script src="<%= BASE_URL %>assets/js/jquery-3.5.1.min.js"></script>
+<script async src="<%= BASE_URL %>assets/js/main.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <p style="text-align: center;
+                color: #14ABD3;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0em;
+                margin-top: 38px;
+                margin-bottom: 13px;
+                ">Booking Confirmation</p>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <p style="text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                margin-top: 0;
+                margin-bottom: 27px;
+                width: 100%;
+                max-width: 375px;
+                margin-left: auto;
+                margin-right: auto;
+                ">Your class “<%- activity_name %>” has been booked by “<%- g_email %>” for you. </p>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <table style="width: 100%; max-width: 512px; margin: auto; padding-top: 13px; padding-bottom: 13px; border-top: 1px solid #C4C4C4;">
+            <tr>
+                <td style="max-width: 140px;
+                        text-align: left;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 12px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-top: 0;
+                        margin-bottom: 8px;
+                        ">Event Details</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="max-width: 140px;">
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Name</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Venue</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Date & Time</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Description</p>
+                </td>
+                <td>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- activity_name %> | <%- zone_title %> Zone at <%- facility %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- address %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- class_date %> | <%- startTime %> - <%- endTime %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- activity_description %></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <table style="width: 100%; max-width: 512px; margin: auto; padding-top: 13px; padding-bottom: 13px; border-top: 1px solid #C4C4C4;">
+            <tr>
+                <td style="max-width: 140px;
+                        text-align: left;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 12px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-top: 0;
+                        margin-bottom: 8px;
+                        ">Booking Person Details</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="max-width: 140px;">
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Name</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Email</p>
+                </td>
+                <td>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- g_name %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- g_email %></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <table style="width: 100%; max-width: 512px; margin: auto; padding-top: 13px; padding-bottom: 13px; border-top: 1px solid #C4C4C4;">
+            <tr>
+                <td style="max-width: 140px;
+                        text-align: left;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 12px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-top: 0;
+                        margin-bottom: 8px;
+                        ">Ticket Details</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="max-width: 140px;">
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Name</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Email</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Ticket Type</p>
+                </td>
+                <td>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- member_name %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- member_email %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Referral</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <table style="width: 100%; max-width: 512px; margin: auto; padding-top: 13px; padding-bottom: 13px; border-top: 1px solid #C4C4C4;">
+            <tr>
+                <td style="max-width: 140px;
+                        text-align: left;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 12px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-top: 0;
+                        margin-bottom: 8px;
+                        ">Booking Details</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="max-width: 140px;">
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Booking ID</p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">Booking Slot(s) Reserved</p>
+                </td>
+                <td>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                "><%- bookingType %></p>
+                    <p style="text-align: left;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 11.72px;
+                                letter-spacing: 0em;
+                                margin: 0;
+                                ">1</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="padding-left: 1rem; padding-right: 1rem;">
+        <p style="text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                margin-top: 38px;
+                margin-bottom: 25px;
+                width: 100%;
+                max-width: 452px;
+                margin-left: auto;
+                margin-right: auto;
+                ">Please activate your account by clicking below button and get this activity added automatically to your calender. And enjoy more fitness experiences Dubai Fitness Challenge.</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="<%- confirmation_token %>" style="display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 10px;
+                letter-spacing: 0em;
+                text-align: center;
+                padding: 8px 25px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: #ffffff;
+                background-color: #00A5E1;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                width: fit-content;
+                text-decoration: none;
+                ">Activate Account</a>
+    </td>
+</tr>

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "type",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": [
+      "biography",
+      "basic-info",
+      "gallery",
+      "profile-categories",
+      "packages",
+      "activities"
+    ],
+    "unique": false
+  },
+  {
+    "name": "id",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "match_with_name": "id",
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": false
+  }
+]

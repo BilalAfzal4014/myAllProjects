@@ -1,0 +1,80 @@
+[
+  {
+    "name": "user_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "modified_by",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "member_package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "schedule_detail_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "type",
+    "required": false,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]

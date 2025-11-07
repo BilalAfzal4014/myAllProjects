@@ -1,0 +1,15 @@
+[
+  {
+    "name": "key_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "match_with_name": "key_id",
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [],
+    "unique": true
+  }
+]

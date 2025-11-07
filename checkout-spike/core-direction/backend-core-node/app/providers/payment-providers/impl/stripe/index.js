@@ -1,0 +1,1 @@
+module.exports = require('stripe')(process.env.stripe_api_key);

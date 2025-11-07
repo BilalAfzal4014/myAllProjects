@@ -1,0 +1,41 @@
+[
+  {
+    "name": "member_billing_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": true
+  },
+  {
+    "name": "amount",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "NUMBER"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "member_package_id",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]

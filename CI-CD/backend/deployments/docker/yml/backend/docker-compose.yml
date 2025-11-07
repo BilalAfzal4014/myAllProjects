@@ -1,0 +1,17 @@
+#version: '3.8'
+
+services:
+  chat-backend:
+    build:
+      context: ../../../../
+      dockerfile: deployments/docker/yml/backend/dockerfile
+    image: chat-backend-image
+    container_name: chat-backend-container
+    ports:
+      - "4000:4000"
+    volumes:
+      - /Users/bilalafzal/Documents/projects/CI-CD/backend:/usr/src/app
+    environment:
+      conflict: dockerWaliOverRideKaraygi
+      docker: envFromDocker
+    command: npm run dev

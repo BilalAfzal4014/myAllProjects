@@ -1,0 +1,74 @@
+<template>
+  <div class="business-profile-info-box flex items-center flex-wrap">
+    <div class="business-profile-short-info-box flex items-center mr-auto">
+      <div class="business-profile-logo-box">
+        <img class="rounded-full" :src="companyLogo" alt="">
+      </div>
+      <div class="business-profile-name-box">
+        <p class="business-profile-brand-title">
+          {{ companyName }}
+        </p>
+      </div>
+    </div>
+    <div class="business-profile-contact-info-box flex items-center">
+      <button
+        type="button"
+        class="btn-brand-number rounded-full flex items-center"
+        @click="openPhone($event, phone)"
+      >
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 10.45C0 4.68066 4.68066 0 10.45 0C16.2193 0 20.9 4.68066 20.9 10.45C20.9 16.2193 16.2193 20.9 10.45 20.9C4.68066 20.9 0 16.2193 0 10.45ZM5.08939 4.74968C4.35423 5.48355 4.00485 6.37727 4 7.426C4.00243 8.02182 4.11646 8.61521 4.31784 9.18681C4.81522 10.6594 5.64257 11.9382 6.69071 13.0766C7.25845 13.6918 7.89413 14.2343 8.57591 14.7235C9.70897 15.5398 10.9148 16.2082 12.2929 16.5207C12.7976 16.6345 13.3071 16.6829 13.8215 16.6054C14.627 16.4843 15.3306 16.1404 15.9517 15.6221C16.1701 15.4405 16.3666 15.2394 16.5292 15.0045C16.6408 14.8446 16.6796 14.6848 16.6044 14.4934C16.5914 14.4604 16.5786 14.4273 16.5659 14.3941C16.5046 14.235 16.4432 14.0754 16.3569 13.9291C15.7794 12.9434 14.9642 12.1998 13.984 11.6282C13.6613 11.4393 13.6055 11.4611 13.3217 11.7106C13.1241 11.8847 12.9366 12.0701 12.7493 12.2552C12.6606 12.343 12.5719 12.4306 12.4822 12.5171C12.4611 12.5373 12.4402 12.5575 12.4192 12.5777C12.2512 12.7394 12.0832 12.9011 11.8999 13.0475C11.7834 13.142 11.6621 13.171 11.5165 13.125C11.3952 13.0863 11.2763 13.0475 11.1647 12.9918C9.94431 12.379 8.9447 11.5095 8.14889 10.4075C7.89656 10.0587 7.71459 9.67121 7.63695 9.24252C7.60783 9.08266 7.6321 8.94945 7.74856 8.82108C7.87537 8.68287 8.00771 8.55016 8.14004 8.41745C8.25583 8.30134 8.37162 8.18522 8.48371 8.06542C8.69479 7.83775 8.90345 7.60766 9.06601 7.33881C9.1946 7.12567 9.20431 6.91738 9.07329 6.70182C8.99322 6.57103 8.91073 6.44267 8.81611 6.32156C8.30174 5.66035 7.70488 5.08392 7.0595 4.55349C6.82416 4.36215 6.58396 4.17808 6.30736 4.04729C6.21274 4.00127 6.12054 3.97463 6.01864 4.03518C5.68139 4.23621 5.36841 4.47115 5.08939 4.74968Z"
+            fill="#690FAD"
+          />
+        </svg>
+        {{ phone }}
+      </button>
+      <a :href="website" class="btn-brand-map rounded-full" target="_blank">Visit Our Website</a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "BusinessProfileInfo",
+  props: {
+    website: {
+      type: String,
+      default: "",
+    },
+    phone: {
+      type: String,
+      default: "",
+    },
+    companyName: {
+      type: String,
+      default: "",
+    },
+    companyLogo: {
+      type: String,
+      default: "",
+    },
+  },
+  methods: {
+    openPhone(event, phone) {
+      window.open(`tel:${phone}`);
+    },
+  },
+};
+</script>
+
+<style scoped>
+  .business-profile-name-box{
+    max-width: 350px;
+    width: 100%;
+  }
+</style>

@@ -1,0 +1,11 @@
+FROM node:19
+
+RUN npm install -g nodemon
+
+workdir /usr/src/app
+
+copy ../../../../ .
+
+#cmd ["npm", "run", "dev"]
+
+#cmd ["nodemon", "src/server.js"]
