@@ -50,7 +50,7 @@ module.exports = {
     },
     Mutation: {
         createUser: (parent, arg) => {
-            // I will return the user and not call user query to return user
+            // I will return the user and not call user query to return user but will call User.courses and/or User.department if requested from client
             const user = arg.input;
             return (new SaveUserUseCase(user)).save();
         }
